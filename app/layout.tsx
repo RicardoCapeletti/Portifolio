@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { profile } from "@/content/profile";
+import { themeInitScript } from "@/lib/theme";
 
 import "./globals.css";
 
@@ -44,8 +45,10 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`${sans.variable} ${display.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col font-sans">
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />

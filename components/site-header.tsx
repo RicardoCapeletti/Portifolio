@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { ThemeToggle } from "@/components/theme-toggle";
 import { profile } from "@/content/profile";
 import { cn } from "@/lib/utils";
 
@@ -33,25 +34,28 @@ export function SiteHeader() {
         <Link href="/" className="font-display text-2xl leading-none tracking-tight">
           {profile.name}
         </Link>
-        <nav aria-label="Seções" className="flex items-center gap-5 text-sm">
-          {links.map((link) => {
-            const active =
-              pathname === link.href || pathname.startsWith(`${link.href}/`);
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                aria-current={active ? "page" : undefined}
-                className={cn(
-                  "transition-colors",
-                  active ? "text-primary" : "text-foreground hover:text-primary",
-                )}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="flex items-center gap-3 sm:gap-5">
+          <nav aria-label="Seções" className="flex items-center gap-5 text-sm">
+            {links.map((link) => {
+              const active =
+                pathname === link.href || pathname.startsWith(`${link.href}/`);
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "transition-colors",
+                    active ? "text-primary" : "text-foreground hover:text-primary",
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
