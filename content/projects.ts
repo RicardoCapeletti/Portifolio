@@ -1,4 +1,5 @@
 import type { Project, WorkImage } from "@/content/types";
+import { extraProjects } from "@/content/projects-extra";
 
 const atelie = {
   capa: {
@@ -355,4 +356,5 @@ export const projects: Project[] = [
       campo.estrutura,
     ],
   },
+  ...extraProjects,
 ];

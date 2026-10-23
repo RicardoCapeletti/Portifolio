@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f0ea"/>
+  
+  <text x="90" y="130" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="46" >O que cabe no vidro</text>
+  <g transform="translate(360 560) scale(0.8)"><path fill="#1c2430" d="M-28-250h56v70c40 18 70 70 70 140v250c0 40-30 70-98 70s-98-30-98-70V-40c0-70 30-122 70-140z"/></g>
+  <g transform="translate(820 560) scale(0.55)" opacity="0.35"><path fill="#1c2430" d="M-28-250h56v70c40 18 70 70 70 140v250c0 40-30 70-98 70s-98-30-98-70V-40c0-70 30-122 70-140z"/></g>
+  <g transform="translate(1180 560) scale(0.35)" opacity="0.2"><path fill="#1c2430" d="M-28-250h56v70c40 18 70 70 70 140v250c0 40-30 70-98 70s-98-30-98-70V-40c0-70 30-122 70-140z"/></g>
+  <text x="250" y="860" fill="#b08968" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="24" >30 ml</text>
+  <text x="740" y="860" fill="#c5cdd4" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="24" >caixa</text>
+  <text x="1100" y="860" fill="#c5cdd4" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="24" >página</text>
+  
+</svg>

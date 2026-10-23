@@ -17,7 +17,6 @@ type HeroStageProps = {
 
 export function HeroStage({ featured, projects }: HeroStageProps) {
   const floating = projects.slice(0, spots.length);
-  const total = String(projects.length).padStart(2, "0");
 
   return (
     <section className="px-3 pt-3 sm:px-4 sm:pt-4">
@@ -109,7 +108,7 @@ export function HeroStage({ featured, projects }: HeroStageProps) {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-background/45 px-3 py-1.5 text-xs text-muted-foreground backdrop-blur-md"
           >
             <ChevronDownIcon className="size-3.5" aria-hidden="true" />
-            01 / {total} · Role
+            Role para a seleção
           </a>
           <p className="flex items-center gap-3 text-xs tracking-[0.18em] text-muted-foreground uppercase">
             Estudos

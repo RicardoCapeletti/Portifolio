@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f0ea"/>
+  
+  <text x="120" y="180" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="140" >Bruma</text>
+  <rect x="120" y="230" width="420" height="2" fill="#b08968"/>
+  <rect x="120" y="300" width="280" height="8" rx="4" fill="#c5cdd4"/>
+  <g transform="translate(1180 620) scale(0.7)"><path fill="#1c2430" d="M-28-250h56v70c40 18 70 70 70 140v250c0 40-30 70-98 70s-98-30-98-70V-40c0-70 30-122 70-140z"/></g>
+  <circle cx="1180" cy="300" r="70" fill="none" stroke="#b08968" stroke-width="2"/>
+  
+</svg>

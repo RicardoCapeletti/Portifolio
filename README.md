@@ -2,7 +2,7 @@
 
 Site estático para mostrar imagens e o fluxo de trabalho de cada projeto: pesquisa, conceito, estrutura, interface e protótipo. Feito com Next.js, TypeScript e Tailwind, pronto para GitHub Pages.
 
-Os três estudos de caso iniciais são exemplos. Troque os textos e as imagens antes de publicar como portfólio pessoal.
+Os estudos de caso são fictícios. Troque os textos e as imagens antes de publicar como portfólio pessoal.
 
 ## Rodar em local
 

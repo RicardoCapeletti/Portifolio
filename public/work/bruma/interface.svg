@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f0ea"/>
+  
+  <rect x="160" y="80" width="1280" height="840" rx="8" fill="#fbf9f5" stroke="#c5cdd4"/>
+  <text x="220" y="180" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >Bruma</text>
+  <rect x="1180" y="160" width="180" height="2" fill="#b08968"/>
+  <text x="220" y="420" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="84" >Figo verde</text>
+  <text x="220" y="490" fill="#b08968" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="22" letter-spacing="3">nota de saída</text>
+  <rect x="220" y="540" width="520" height="10" rx="5" fill="#ddd6cc"/><rect x="220" y="572" width="460" height="10" rx="5" fill="#ddd6cc"/><rect x="220" y="604" width="300" height="10" rx="5" fill="#ddd6cc"/>
+  <rect x="220" y="760" width="200" height="56" rx="28" fill="#1c2430"/>
+  <text x="270" y="796" fill="#f3f0ea" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="22" >Reservar</text>
+  
+</svg>

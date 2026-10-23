@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f4f1ea"/>
+  
+  <rect x="100" y="70" width="1400" height="860" fill="#fff" stroke="#e4dfd6"/>
+  <text x="160" y="160" fill="#111111" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="24" >Largo</text>
+  <rect x="1180" y="130" width="240" height="44" rx="22" fill="#111111"/>
+  <text x="1240" y="160" fill="#f4f1ea" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="20" >Licença</text>
+  <text x="160" y="460" fill="#111111" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="100" >A mesa cabe</text>
+  <text x="160" y="580" fill="#111111" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="100" >na margem.</text>
+  <text x="160" y="820" fill="#9a958c" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="24" >uso impresso e tela  ·  uma linha antes do preço</text>
+  
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6f5f2"/>
+  
+  <text x="90" y="120" fill="#1a1a1a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="44" >A calçada, não o eixo</text>
+  <rect x="90" y="200" width="680" height="680" fill="#fff" stroke="#e4e1da"/>
+  <line x1="200" y1="280" x2="200" y2="780" stroke="#eceae4" stroke-width="40"/>
+  <line x1="430" y1="280" x2="430" y2="780" stroke="#eceae4" stroke-width="40"/>
+  <line x1="90" y1="480" x2="770" y2="480" stroke="#eceae4" stroke-width="28"/>
+  <line x1="250" y1="780" x2="250" y2="300" stroke="#2457d6" stroke-width="8"/>
+  <rect x="860" y="200" width="640" height="680" fill="#fff" stroke="#e4e1da"/>
+  <rect x="920" y="280" width="480" height="12" rx="6" fill="#d9d6cf"/><rect x="920" y="328" width="420" height="12" rx="6" fill="#d9d6cf"/><rect x="920" y="376" width="460" height="12" rx="6" fill="#d9d6cf"/><rect x="920" y="424" width="300" height="12" rx="6" fill="#d9d6cf"/>
+  <rect x="920" y="560" width="220" height="64" rx="32" fill="#2457d6"/>
+  <text x="970" y="600" fill="#fff" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="22" >12 min a pé</text>
+  
+</svg>

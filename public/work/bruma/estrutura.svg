@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f0ea"/>
+  
+  <rect x="120" y="100" width="640" height="800" fill="#fbf9f5" stroke="#c5cdd4"/>
+  <rect x="840" y="100" width="640" height="800" fill="#fbf9f5" stroke="#c5cdd4"/>
+  <text x="180" y="220" fill="#b08968" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="22" letter-spacing="4">Saída</text>
+  <text x="180" y="300" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="56" >Figo verde</text>
+  <rect x="180" y="360" width="420" height="10" rx="5" fill="#ddd6cc"/><rect x="180" y="396" width="360" height="10" rx="5" fill="#ddd6cc"/><rect x="180" y="432" width="280" height="10" rx="5" fill="#ddd6cc"/>
+  <g transform="translate(1160 520) scale(0.55)"><path fill="#1c2430" d="M-28-250h56v70c40 18 70 70 70 140v250c0 40-30 70-98 70s-98-30-98-70V-40c0-70 30-122 70-140z"/></g>
+  <text x="980" y="780" fill="#1c2430" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="32" >uma página</text>
+  
+</svg>

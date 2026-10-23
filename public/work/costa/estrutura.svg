@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f4f0e8"/>
+  
+  <rect x="160" y="80" width="1280" height="840" rx="32" fill="#fff"/>
+  <text x="240" y="220" fill="#e6b15a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" letter-spacing="4">Hoje</text>
+  <text x="240" y="340" fill="#1f4e5f" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="100" >Entrar</text>
+  <rect x="240" y="420" width="280" height="16" rx="8" fill="#e6b15a"/>
+  <rect x="540" y="420" width="160" height="16" rx="8" fill="#e7f2f4"/>
+  <text x="240" y="520" fill="#1f4e5f" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="48" >16:10</text>
+  <rect x="240" y="680" width="520" height="120" rx="24" fill="#f4f0e8"/>
+  <text x="280" y="750" fill="#1f4e5f" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >Amanhã espera até as 9.</text>
+  
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6f5f2"/>
+  
+  <text x="100" y="160" fill="#1a1a1a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="48" >Três coisas na tela</text>
+  
+      <rect x="100" y="260" width="440" height="520" rx="28" fill="#fff" stroke="#e4e1da"/>
+      <circle cx="180" cy="380" r="28" fill="#2457d6"/>
+      <text x="140" y="680" fill="#1a1a1a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="36" >Travessia</text>
+    
+      <rect x="590" y="260" width="440" height="520" rx="28" fill="#fff" stroke="#e4e1da"/>
+      <circle cx="670" cy="380" r="28" fill="#1a1a1a"/>
+      <text x="630" y="680" fill="#1a1a1a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="36" >Calçada</text>
+    
+      <rect x="1080" y="260" width="440" height="520" rx="28" fill="#fff" stroke="#e4e1da"/>
+      <circle cx="1160" cy="380" r="28" fill="#1a1a1a"/>
+      <text x="1120" y="680" fill="#1a1a1a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="36" >Passo</text>
+    
+  
+</svg>

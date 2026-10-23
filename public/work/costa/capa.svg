@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f4f0e8"/>
+  
+  <rect x="0" y="560" width="1600" height="440" fill="#1f4e5f"/>
+  <circle cx="1180" cy="560" r="140" fill="#e6b15a"/>
+  <rect x="0" y="548" width="1600" height="24" fill="#e7f2f4"/>
+  <text x="96" y="220" fill="#1f4e5f" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="100" >Costa</text>
+  <text x="100" y="280" fill="#e6b15a" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="20" letter-spacing="4">ENTRAR ÀS 16:10</text>
+  
+</svg>

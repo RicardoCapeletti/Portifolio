@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f7f4ef"/>
+  
+  <text x="90" y="140" fill="#2c3330" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="42" >O cadastro vinha antes da sala</text>
+  <rect x="90" y="220" width="700" height="14" rx="7" fill="#ddd6cc"/><rect x="90" y="268" width="640" height="14" rx="7" fill="#ddd6cc"/><rect x="90" y="316" width="520" height="14" rx="7" fill="#ddd6cc"/><rect x="90" y="364" width="480" height="14" rx="7" fill="#ddd6cc"/><rect x="90" y="412" width="300" height="14" rx="7" fill="#ddd6cc"/>
+  <rect x="980" y="220" width="500" height="560" rx="24" fill="#fff" stroke="#e6dfd4"/>
+  <text x="1020" y="320" fill="#2c3330" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="64" >Livre</text>
+  <text x="1020" y="400" fill="#e2b657" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >22:00–00:00</text>
+  <rect x="1020" y="480" width="360" height="12" rx="6" fill="#e6dfd4"/><rect x="1020" y="520" width="280" height="12" rx="6" fill="#e6dfd4"/>
+  
+</svg>

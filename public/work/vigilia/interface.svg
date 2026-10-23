@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#1a1f1d"/>
+  
+  <rect x="500" y="40" width="600" height="920" rx="48" fill="#121614" stroke="#2c3330" stroke-width="6"/>
+  <text x="560" y="160" fill="#e2b657" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="22" letter-spacing="3">Vigília</text>
+  <text x="560" y="240" fill="#f7f4ef" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="48" >Sala 2</text>
+  <rect x="560" y="320" width="480" height="90" rx="16" fill="#232a27"/>
+      <text x="590" y="375" fill="#f7f4ef" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >20:00</text><rect x="560" y="440" width="480" height="90" rx="16" fill="#232a27"/>
+      <text x="590" y="495" fill="#f7f4ef" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >21:00</text><rect x="560" y="560" width="480" height="90" rx="16" fill="#e2b657"/>
+      <text x="590" y="615" fill="#2c3330" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >22:00</text><rect x="560" y="680" width="480" height="90" rx="16" fill="#232a27"/>
+      <text x="590" y="735" fill="#f7f4ef" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="28" >23:00</text>
+  
+</svg>
