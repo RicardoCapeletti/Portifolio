@@ -38,9 +38,11 @@ O export fica em `out/`. Imagens não passam pelo otimizador do Next, porque o G
 
 ### Site de usuário ou de projeto
 
-- Site de usuário (`usuario.github.io`): deixe `NEXT_PUBLIC_BASE_PATH` vazio.
-- Site de projeto (`usuario.github.io/nome-do-repo`): crie uma variável de Actions chamada `NEXT_PUBLIC_BASE_PATH` com o valor `/nome-do-repo` (barra no início, sem barra no fim).
+No deploy, o workflow lê o caminho e a URL que o GitHub Pages informar. Em geral não precisa configurar nada.
 
-Opcional: `NEXT_PUBLIC_SITE_URL` com a URL absoluta (`https://usuario.github.io` ou `https://usuario.github.io/nome-do-repo`) para a base dos metadados.
+Se quiser forçar os valores, crie variáveis de Actions:
 
-As duas variáveis ficam em **Settings → Secrets and variables → Actions → Variables**. Sem elas, o build assume a raiz do domínio.
+- `NEXT_PUBLIC_BASE_PATH` — vazio na raiz (`usuario.github.io`) ou `/nome-do-repo` em site de projeto
+- `NEXT_PUBLIC_SITE_URL` — URL absoluta, por exemplo `https://usuario.github.io/nome-do-repo`
+
+As variáveis ficam em **Settings → Secrets and variables → Actions → Variables**.
