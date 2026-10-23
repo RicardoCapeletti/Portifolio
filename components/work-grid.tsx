@@ -41,6 +41,7 @@ export function WorkGrid({ projects }: WorkGridProps) {
                 size="sm"
                 variant={selected ? "default" : "outline"}
                 aria-pressed={selected}
+                className="rounded-full"
                 onClick={() => setFilter(item.id)}
               >
                 {item.label}
@@ -54,8 +55,8 @@ export function WorkGrid({ projects }: WorkGridProps) {
       </div>
 
       {visible.length === 0 ? (
-        <div className="mt-10 border border-dashed border-border bg-card px-6 py-16 text-center">
-          <p className="font-display text-3xl tracking-tight">
+        <div className="mt-10 rounded-[1.5rem] border border-dashed border-border bg-card px-6 py-16 text-center">
+          <p className="font-display text-3xl font-medium tracking-tight">
             Nada nesta disciplina.
           </p>
           <p className="mx-auto mt-3 max-w-md text-muted-foreground">

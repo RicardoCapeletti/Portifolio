@@ -18,11 +18,11 @@ export const metadata: Metadata = {
 
 export default function TrabalhoPage() {
   return (
-    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
+    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
         Estudos de caso
       </p>
-      <h1 className="mt-4 max-w-3xl font-display text-5xl tracking-tight sm:text-7xl">
+      <h1 className="mt-4 max-w-3xl font-display text-5xl font-medium tracking-tight sm:text-7xl">
         Trabalho
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed">

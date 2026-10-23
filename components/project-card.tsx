@@ -20,12 +20,9 @@ export function ProjectCard({
     <article>
       <Link
         href={`/trabalho/${project.slug}`}
-        className="group block rounded-sm focus-visible:outline-offset-4"
+        className="group block rounded-[1.5rem] focus-visible:outline-offset-4"
       >
-        <div
-          className="relative aspect-[16/10] overflow-hidden bg-card"
-          style={{ boxShadow: `inset 0 0 0 1px ${project.accent}22` }}
-        >
+        <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-border bg-card">
           <WorkImage
             src={project.cover.src}
             alt={project.cover.alt}
@@ -33,17 +30,17 @@ export function ProjectCard({
             sizes={
               featured
                 ? "(min-width: 1024px) 1100px, 100vw"
-                : "(min-width: 768px) 40vw, 100vw"
+                : "(min-width: 768px) 33vw, 100vw"
             }
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+            className="object-cover transition-transform duration-700 group-hover:scale-[1.04] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
         </div>
         <div className="mt-4 flex items-baseline justify-between gap-4">
           <h3
             className={
               featured
-                ? "font-display text-4xl tracking-tight group-hover:text-primary sm:text-5xl"
-                : "font-display text-3xl tracking-tight group-hover:text-primary"
+                ? "font-display text-3xl font-medium tracking-tight sm:text-4xl"
+                : "font-display text-2xl font-medium tracking-tight"
             }
           >
             {project.title}
@@ -60,7 +57,7 @@ export function ProjectCard({
           </p>
         ) : null}
         {featured ? (
-          <p className="mt-4 text-sm text-primary">Ver o fluxo</p>
+          <p className="mt-4 text-sm text-muted-foreground">Ver o fluxo</p>
         ) : null}
       </Link>
     </article>

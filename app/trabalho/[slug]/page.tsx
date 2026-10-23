@@ -53,9 +53,9 @@ export default async function ProjectPage({
   const next = getNextProject(project.slug);
 
   return (
-    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
+    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
-        <Link href="/trabalho" className="hover:text-primary">
+        <Link href="/trabalho" className="hover:text-foreground">
           Trabalho
         </Link>
       </p>
@@ -63,7 +63,7 @@ export default async function ProjectPage({
         className="mt-6 h-1 w-12"
         style={{ backgroundColor: project.accent }}
       />
-      <h1 className="mt-6 font-display text-5xl tracking-tight sm:text-7xl">
+      <h1 className="mt-6 font-display text-5xl font-medium tracking-tight sm:text-7xl">
         {project.title}
       </h1>
       <div className="mt-6 flex flex-wrap items-center gap-3 text-sm">
@@ -73,7 +73,7 @@ export default async function ProjectPage({
       </div>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed">{project.summary}</p>
 
-      <div className="relative mt-10 aspect-[16/10] overflow-hidden bg-card">
+      <div className="relative mt-10 aspect-[16/10] overflow-hidden rounded-[1.75rem] border border-border bg-card">
         <WorkImage
           src={project.cover.src}
           alt={project.cover.alt}
@@ -85,7 +85,7 @@ export default async function ProjectPage({
       <p className="mt-3 text-sm text-muted-foreground">{project.cover.caption}</p>
 
       <section aria-labelledby="contexto" className="mt-16">
-        <h2 id="contexto" className="font-display text-3xl tracking-tight">
+        <h2 id="contexto" className="font-display text-3xl font-medium tracking-tight">
           Contexto
         </h2>
         <div className="mt-8 grid gap-10 lg:grid-cols-2">
@@ -104,8 +104,8 @@ export default async function ProjectPage({
         </div>
         <ol className="mt-12 grid gap-8 md:grid-cols-3">
           {project.brief.outcomes.map((outcome, index) => (
-            <li key={outcome} className="border-t border-primary pt-4">
-              <p className="font-display text-lg text-primary">
+            <li key={outcome} className="rounded-[1.25rem] border border-border bg-card/70 p-5">
+              <p className="font-display text-lg text-muted-foreground">
                 {String(index + 1).padStart(2, "0")}
               </p>
               <p className="mt-3 leading-relaxed">{outcome}</p>
@@ -117,7 +117,7 @@ export default async function ProjectPage({
       <Separator className="mt-16" />
 
       <section aria-labelledby="fluxo" className="mt-16">
-        <h2 id="fluxo" className="font-display text-4xl tracking-tight sm:text-5xl">
+        <h2 id="fluxo" className="font-display text-4xl font-medium tracking-tight sm:text-5xl">
           Fluxo
         </h2>
         <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
@@ -131,7 +131,7 @@ export default async function ProjectPage({
 
       {project.gallery.length > 0 ? (
         <section aria-labelledby="galeria" className="mt-8">
-          <h2 id="galeria" className="font-display text-4xl tracking-tight">
+          <h2 id="galeria" className="font-display text-4xl font-medium tracking-tight">
             Galeria
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground">
@@ -153,7 +153,7 @@ export default async function ProjectPage({
             href={`/trabalho/${next.slug}`}
             className="group mt-4 block"
           >
-            <p className="font-display text-4xl tracking-tight group-hover:text-primary sm:text-6xl">
+            <p className="font-display text-4xl font-medium tracking-tight group-hover:opacity-70 sm:text-6xl">
               {next.title}
             </p>
             <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">

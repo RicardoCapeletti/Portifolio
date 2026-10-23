@@ -55,7 +55,7 @@ export function Lightbox({ images }: LightboxProps) {
               <button
                 type="button"
                 onClick={() => openAt(imageIndex)}
-                className="relative block aspect-[16/10] w-full overflow-hidden bg-card text-left"
+                className="relative block aspect-[16/10] w-full overflow-hidden rounded-[1.25rem] border border-border bg-card text-left"
               >
                 <Image
                   src={assetSrc(image.src)}
@@ -76,7 +76,7 @@ export function Lightbox({ images }: LightboxProps) {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent
-          className="gap-4 bg-card p-4 sm:max-w-5xl sm:p-6"
+          className="gap-4 rounded-[1.75rem] bg-card p-4 sm:max-w-5xl sm:p-6"
           onKeyDown={(event) => {
             if (event.key === "ArrowRight") {
               event.preventDefault();

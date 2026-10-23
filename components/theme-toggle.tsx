@@ -26,7 +26,7 @@ export function ThemeToggle() {
       size="icon-sm"
       aria-pressed={dark}
       aria-label={dark ? "Usar tema claro" : "Usar tema escuro"}
-      className="text-muted-foreground"
+      className="rounded-full border border-border bg-background/55 text-muted-foreground backdrop-blur-md"
       onClick={() => applyTheme(dark ? "light" : "dark")}
     >
       {dark ? <SunIcon /> : <MoonIcon />}

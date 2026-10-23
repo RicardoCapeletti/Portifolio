@@ -133,7 +133,7 @@ export function Workflow({ stages }: WorkflowProps) {
             <p className="text-sm text-primary">
               {String(index + 1).padStart(2, "0")}
             </p>
-            <h3 className="mt-2 font-display text-4xl tracking-tight">
+            <h3 className="mt-2 font-display text-4xl font-medium tracking-tight">
               {stage.title}
             </h3>
             <p className="mt-4 max-w-2xl leading-relaxed">{stage.summary}</p>
