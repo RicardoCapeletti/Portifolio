@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f6ef"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#2f6a45" stroke-opacity="0.25"/>
+  <rect x="180" y="80" width="1240" height="840" rx="12" fill="#fffdf8" stroke="#5c4636" stroke-opacity="0.2"/>
+  <text x="240" y="180" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="48" >Banca da Serra</text>
+  
+        <circle cx="300" cy="290" r="36" fill="#e2b657"/>
+        <rect x="370" y="266" width="360" height="16" rx="8" fill="#5c4636" opacity="0.8"/>
+        <rect x="370" y="298" width="180" height="10" rx="5" fill="#d9d0c2"/>
+        <rect x="1080" y="258" width="64" height="64" rx="8" fill="#f3f6ef" stroke="#2f6a45"/>
+        <rect x="1160" y="258" width="160" height="64" rx="8" fill="#2f6a45"/>
+      
+        <circle cx="300" cy="430" r="36" fill="#2f6a45"/>
+        <rect x="370" y="406" width="360" height="16" rx="8" fill="#5c4636" opacity="0.8"/>
+        <rect x="370" y="438" width="180" height="10" rx="5" fill="#d9d0c2"/>
+        <rect x="1080" y="398" width="64" height="64" rx="8" fill="#f3f6ef" stroke="#2f6a45"/>
+        <rect x="1160" y="398" width="160" height="64" rx="8" fill="#2f6a45"/>
+      
+        <circle cx="300" cy="570" r="36" fill="#e2b657"/>
+        <rect x="370" y="546" width="360" height="16" rx="8" fill="#5c4636" opacity="0.8"/>
+        <rect x="370" y="578" width="180" height="10" rx="5" fill="#d9d0c2"/>
+        <rect x="1080" y="538" width="64" height="64" rx="8" fill="#f3f6ef" stroke="#2f6a45"/>
+        <rect x="1160" y="538" width="160" height="64" rx="8" fill="#2f6a45"/>
+      
+        <circle cx="300" cy="710" r="36" fill="#e2b657"/>
+        <rect x="370" y="686" width="360" height="16" rx="8" fill="#5c4636" opacity="0.8"/>
+        <rect x="370" y="718" width="180" height="10" rx="5" fill="#d9d0c2"/>
+        <rect x="1080" y="678" width="64" height="64" rx="8" fill="#f3f6ef" stroke="#2f6a45"/>
+        <rect x="1160" y="678" width="160" height="64" rx="8" fill="#2f6a45"/>
+      
+  
+</svg>

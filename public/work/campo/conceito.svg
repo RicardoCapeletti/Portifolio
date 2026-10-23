@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f6ef"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#2f6a45" stroke-opacity="0.25"/>
+  <text x="80" y="140" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="48" >Quatro passos</text>
+  
+        <rect x="80" y="240" width="320" height="520" rx="8" fill="#fffdf8" stroke="#5c4636" stroke-opacity="0.25"/>
+        <text x="116" y="340" fill="#2f6a45" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="42" >01</text>
+        <text x="116" y="680" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="40" >Banca</text>
+      
+        <rect x="460" y="240" width="320" height="520" rx="8" fill="#fffdf8" stroke="#5c4636" stroke-opacity="0.25"/>
+        <text x="496" y="340" fill="#2f6a45" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="42" >02</text>
+        <text x="496" y="680" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="40" >Itens</text>
+      
+        <rect x="840" y="240" width="320" height="520" rx="8" fill="#fffdf8" stroke="#5c4636" stroke-opacity="0.25"/>
+        <text x="876" y="340" fill="#2f6a45" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="42" >03</text>
+        <text x="876" y="680" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="40" >Cesta</text>
+      
+        <rect x="1220" y="240" width="320" height="520" rx="8" fill="#2f6a45" stroke="#5c4636" stroke-opacity="0.25"/>
+        <text x="1256" y="340" fill="#e2b657" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="42" >04</text>
+        <text x="1256" y="680" fill="#f3f6ef" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="40" >Frase</text>
+      
+  
+</svg>

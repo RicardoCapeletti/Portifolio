@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f6ef"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#2f6a45" stroke-opacity="0.25"/>
+  <circle cx="620" cy="500" r="250" fill="#2f6a45"/>
+  <circle cx="980" cy="360" r="120" fill="#e2b657"/>
+  <circle cx="1040" cy="620" r="90" fill="#c46a3a"/>
+  <circle cx="360" cy="340" r="70" fill="#5c4636"/>
+  <circle cx="400" cy="680" r="54" fill="#e2b657"/>
+  <text x="96" y="860" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="92" >Campo</text>
+  <text x="104" y="910" fill="#2f6a45" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="20" letter-spacing="4">FEIRA SEMANAL</text>
+  
+</svg>

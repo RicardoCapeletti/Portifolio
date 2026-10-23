@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3e6d8"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#6e3b28" stroke-opacity="0.16"/>
+  <text x="88" y="130" fill="#241c17" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="48" >Três vasos</text>
+  <g transform="translate(280 560) scale(0.72)"><path fill="#c46a3a" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/></g>
+  <g transform="translate(760 560) scale(0.9)" opacity="0.95"><path fill="#c46a3a" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/></g>
+  <g transform="translate(1240 560) scale(0.62)">
+    <path fill="#6e3b28" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/>
+  </g>
+  <rect x="88" y="820" width="72" height="72" fill="#e7d3c0"/>
+  <rect x="176" y="820" width="72" height="72" fill="#c46a3a"/>
+  <rect x="264" y="820" width="72" height="72" fill="#6e3b28"/>
+  <text x="380" y="866" fill="#6e3b28" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="24" >Barro  ·  queima  ·  engobe</text>
+  
+</svg>

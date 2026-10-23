@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f7f5f1"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#1e2a30" stroke-opacity="0.2"/>
+  <text x="100" y="160" fill="#1e2a30" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="48" >Três tamanhos</text>
+  <text x="100" y="360" fill="#1e2a30" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="84" >Título do ensaio</text>
+  <rect x="100" y="460" width="920" height="12" rx="6" fill="#1e2a30"/><rect x="100" y="496" width="860" height="12" rx="6" fill="#1e2a30"/><rect x="100" y="532" width="940" height="12" rx="6" fill="#1e2a30"/><rect x="100" y="568" width="700" height="12" rx="6" fill="#1e2a30"/>
+  <rect x="100" y="680" width="640" height="8" rx="4" fill="#8d877e"/><rect x="100" y="708" width="520" height="8" rx="4" fill="#8d877e"/><rect x="100" y="736" width="480" height="8" rx="4" fill="#8d877e"/>
+  <rect x="100" y="820" width="120" height="8" fill="#9a3412"/>
+  
+</svg>

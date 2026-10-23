@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f6ef"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#2f6a45" stroke-opacity="0.25"/>
+  <rect x="500" y="40" width="600" height="920" rx="48" fill="#fffdf8" stroke="#5c4636" stroke-width="8"/>
+  <text x="570" y="180" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="48" >Sua cesta</text>
+  <rect x="570" y="230" width="360" height="12" rx="6" fill="#d9d0c2"/><rect x="570" y="258" width="280" height="12" rx="6" fill="#d9d0c2"/>
+  <rect x="570" y="320" width="460" height="90" rx="10" fill="#f3f6ef"/>
+  <circle cx="620" cy="365" r="24" fill="#2f6a45"/>
+  <rect x="570" y="430" width="460" height="90" rx="10" fill="#f3f6ef"/>
+  <circle cx="620" cy="475" r="24" fill="#e2b657"/>
+  <rect x="570" y="540" width="460" height="90" rx="10" fill="#f3f6ef"/>
+  <circle cx="620" cy="585" r="24" fill="#c46a3a"/>
+  <rect x="570" y="800" width="460" height="80" rx="12" fill="#2f6a45"/>
+  <text x="700" y="850" fill="#f3f6ef" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="28" >Confirmar</text>
+  
+</svg>

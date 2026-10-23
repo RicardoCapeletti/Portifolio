@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3f6ef"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#2f6a45" stroke-opacity="0.25"/>
+  <text x="90" y="130" fill="#5c4636" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="46" >A feira, por banca</text>
+  <circle cx="180" cy="280" r="28" fill="#d7e0d2"/><circle cx="360" cy="280" r="28" fill="#d7e0d2"/><circle cx="540" cy="280" r="28" fill="#d7e0d2"/><circle cx="720" cy="280" r="28" fill="#d7e0d2"/><circle cx="900" cy="280" r="28" fill="#d7e0d2"/><circle cx="1080" cy="280" r="28" fill="#d7e0d2"/><circle cx="1260" cy="280" r="28" fill="#d7e0d2"/><circle cx="180" cy="440" r="28" fill="#e2b657"/><circle cx="360" cy="440" r="28" fill="#e2b657"/><circle cx="540" cy="440" r="28" fill="#e2b657"/><circle cx="720" cy="440" r="48" fill="#2f6a45"/><circle cx="900" cy="440" r="28" fill="#e2b657"/><circle cx="1080" cy="440" r="28" fill="#e2b657"/><circle cx="1260" cy="440" r="28" fill="#e2b657"/><circle cx="180" cy="600" r="28" fill="#d7e0d2"/><circle cx="360" cy="600" r="28" fill="#d7e0d2"/><circle cx="540" cy="600" r="28" fill="#d7e0d2"/><circle cx="720" cy="600" r="28" fill="#d7e0d2"/><circle cx="900" cy="600" r="28" fill="#d7e0d2"/><circle cx="1080" cy="600" r="28" fill="#d7e0d2"/><circle cx="1260" cy="600" r="28" fill="#d7e0d2"/><circle cx="180" cy="760" r="28" fill="#e2b657"/><circle cx="360" cy="760" r="28" fill="#e2b657"/><circle cx="540" cy="760" r="28" fill="#e2b657"/><circle cx="720" cy="760" r="28" fill="#e2b657"/><circle cx="900" cy="760" r="28" fill="#e2b657"/><circle cx="1080" cy="760" r="28" fill="#e2b657"/><circle cx="1260" cy="760" r="28" fill="#e2b657"/>
+  
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6efe6"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#6e3b28" stroke-opacity="0.16"/>
+  <circle cx="360" cy="500" r="210" fill="#fbf8f3" stroke="#241c17" stroke-width="4"/>
+  <g transform="translate(360 540) scale(0.55)"><path fill="#c46a3a" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/></g>
+  <rect x="680" y="250" width="340" height="500" fill="#fbf8f3" stroke="#241c17" stroke-opacity="0.3"/>
+  <g transform="translate(850 470) scale(0.38)"><path fill="#c46a3a" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/></g>
+  <text x="760" y="680" fill="#6e3b28" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="28" >Etiqueta</text>
+  <rect x="1100" y="180" width="380" height="640" fill="#fbf8f3" stroke="#241c17" stroke-opacity="0.25"/>
+  <rect x="1160" y="250" width="260" height="12" fill="#c46a3a"/>
+  <rect x="1160" y="310" width="240" height="10" rx="5" fill="#d9c7b6"/><rect x="1160" y="346" width="200" height="10" rx="5" fill="#d9c7b6"/><rect x="1160" y="382" width="220" height="10" rx="5" fill="#d9c7b6"/><rect x="1160" y="418" width="160" height="10" rx="5" fill="#d9c7b6"/>
+  <rect x="1160" y="500" width="180" height="180" fill="#e7d3c0"/>
+  
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f3e6d8"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#6e3b28" stroke-opacity="0.16"/>
+  <rect x="560" y="70" width="480" height="860" rx="42" fill="#fbf8f3" stroke="#241c17" stroke-width="8"/>
+  <circle cx="800" cy="150" r="22" fill="#c46a3a"/>
+  <text x="700" y="220" fill="#241c17" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="36" >Tigela funda</text>
+  <rect x="640" y="270" width="320" height="300" fill="#e7d3c0"/>
+  <rect x="640" y="610" width="280" height="10" rx="5" fill="#cbb9a8"/><rect x="640" y="642" width="220" height="10" rx="5" fill="#cbb9a8"/><rect x="640" y="674" width="180" height="10" rx="5" fill="#cbb9a8"/>
+  <rect x="640" y="780" width="320" height="64" fill="#241c17"/>
+  <text x="730" y="820" fill="#f6efe6" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="24" >Reservar</text>
+  
+</svg>

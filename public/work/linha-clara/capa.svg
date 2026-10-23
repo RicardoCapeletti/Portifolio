@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f7f5f1"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#1e2a30" stroke-opacity="0.2"/>
+  <text x="96" y="180" fill="#1e2a30" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="84" >Linha Clara</text>
+  <text x="100" y="240" fill="#9a3412" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="20" letter-spacing="5">LEITURA LONGA</text>
+  <rect x="980" y="160" width="2" height="680" fill="#c9c2b6"/>
+  <rect x="1040" y="180" width="360" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="216" width="340" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="252" width="380" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="288" width="300" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="324" width="360" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="360" width="220" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="396" width="340" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="432" width="380" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="468" width="260" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="504" width="300" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="540" width="180" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="576" width="340" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="612" width="300" height="8" rx="4" fill="#1e2a30"/><rect x="1040" y="648" width="240" height="8" rx="4" fill="#1e2a30"/>
+  <rect x="1040" y="468" width="220" height="8" fill="#9a3412"/>
+  
+</svg>

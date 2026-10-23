@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f6efe6"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#6e3b28" stroke-opacity="0.16"/>
+  <circle cx="1040" cy="470" r="300" fill="#e7d3c0"/>
+  <g transform="translate(1040 520)"><path fill="#c46a3a" d="M0-250h-22l-8 48c-62 18-96 120-84 250 10 110 48 176 114 188 66-12 104-78 114-188 12-130-22-232-84-250l-8-48h-22z"/></g>
+  <circle cx="1268" cy="250" r="74" fill="none" stroke="#241c17" stroke-width="3"/>
+  <circle cx="1268" cy="250" r="58" fill="none" stroke="#c46a3a" stroke-width="8"/>
+  <text x="96" y="780" fill="#241c17" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="92" >Ateliê Norte</text>
+  <text x="100" y="840" fill="#6e3b28" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="22" letter-spacing="4">CERÂMICA  ·  SÃO PAULO</text>
+  
+</svg>

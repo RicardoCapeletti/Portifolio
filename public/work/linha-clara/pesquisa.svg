@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#f7f5f1"/>
+  
+  <rect x="36" y="36" width="1528" height="928" fill="none" stroke="#1e2a30" stroke-opacity="0.2"/>
+  <text x="90" y="120" fill="#1e2a30" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', serif" font-size="42" >Medida da linha</text>
+  <rect x="90" y="180" width="680" height="720" fill="#fffdf9" stroke="#c9c2b6"/>
+  <rect x="140" y="240" width="560" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="288" width="540" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="336" width="580" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="384" width="500" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="432" width="560" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="480" width="520" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="528" width="480" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="576" width="540" height="12" rx="6" fill="#d5cfc4"/><rect x="140" y="624" width="300" height="12" rx="6" fill="#d5cfc4"/>
+  <rect x="140" y="520" width="420" height="14" fill="#9a3412"/>
+  <rect x="860" y="180" width="640" height="720" fill="#fffdf9" stroke="#c9c2b6"/>
+  <rect x="910" y="250" width="480" height="10" rx="5" fill="#1e2a30"/><rect x="910" y="292" width="420" height="10" rx="5" fill="#1e2a30"/><rect x="910" y="334" width="500" height="10" rx="5" fill="#1e2a30"/><rect x="910" y="376" width="360" height="10" rx="5" fill="#1e2a30"/><rect x="910" y="418" width="440" height="10" rx="5" fill="#1e2a30"/>
+  <rect x="910" y="500" width="8" height="280" fill="#9a3412"/>
+  <rect x="950" y="520" width="360" height="8" rx="4" fill="#b7b1a6"/><rect x="950" y="560" width="300" height="8" rx="4" fill="#b7b1a6"/><rect x="950" y="600" width="340" height="8" rx="4" fill="#b7b1a6"/><rect x="950" y="640" width="220" height="8" rx="4" fill="#b7b1a6"/>
+  
+</svg>
