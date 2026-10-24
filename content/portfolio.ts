@@ -240,8 +240,8 @@ export function categoryFromQuery(value: string | null | undefined): PortfolioCa
 }
 
 export function categoryHref(category: PortfolioCategory | "todos"): string {
-  if (category === "todos") return "/#projetos";
-  return `/?categoria=${encodeURIComponent(category)}#projetos`;
+  if (category === "todos") return "/projetos";
+  return `/projetos?categoria=${encodeURIComponent(category)}`;
 }
 
 export function neighboringPieces(slug: string): {

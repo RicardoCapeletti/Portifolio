@@ -2,19 +2,15 @@ import { SiteNav } from "@/components/site-nav";
 
 export function SiteHeader() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex h-[var(--site-header)] items-center px-4 text-[var(--landing-ink)] sm:px-6">
-      <div
-        className="pointer-events-none absolute inset-0 border-b border-[var(--landing-line)] bg-[#F5F3EE]/88 backdrop-blur-md dark:bg-[#0B0B0D]/88"
-        aria-hidden="true"
-      />
+    <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-5 sm:pt-4">
       <a
         href="#conteudo"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-4 focus:z-10 focus:rounded-full focus:bg-[var(--landing-frame)] focus:px-3 focus:py-2 focus:outline focus:outline-2 focus:outline-offset-2"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-4 focus:z-10 focus:rounded-full focus:bg-[var(--palette-graphite)] focus:px-3 focus:py-2 focus:text-[var(--palette-cream)] focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[var(--palette-gold)]"
       >
         Ir para o conteúdo
       </a>
-      <div className="relative mx-auto w-full max-w-[1600px]">
-        <SiteNav tone="bar" />
+      <div className="relative mx-auto flex h-12 max-w-[1500px] items-center rounded-full border border-[var(--palette-gold-dark)] bg-[var(--palette-graphite)]/95 px-5 text-[var(--palette-cream)] shadow-[0_12px_40px_rgb(0_0_0/0.28)] backdrop-blur-md">
+        <SiteNav />
       </div>
     </header>
   );
