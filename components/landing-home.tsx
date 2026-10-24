@@ -59,7 +59,10 @@ export function LandingHome() {
       </a>
       <div className="mx-auto grid w-full max-w-[1600px] items-stretch gap-3 p-3 sm:p-4 min-[900px]:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] min-[900px]:gap-4">
         <div id="painel" className="flex h-full flex-col overflow-hidden rounded-[1.7rem] bg-white text-neutral-950">
-          <section className="landing-hero flex min-h-[100svh] flex-1 flex-col px-5 pt-5 pb-6 text-white sm:px-8 sm:pt-7 min-[900px]:min-h-[920px] min-[900px]:px-10">
+          <section
+            id="inicio"
+            className="landing-hero flex min-h-[100svh] flex-1 flex-col px-5 pt-5 pb-6 text-white sm:px-8 sm:pt-7 min-[900px]:min-h-[920px] min-[900px]:px-10"
+          >
             <header className="landing-rise">
               <SiteNav tone="hero" />
             </header>

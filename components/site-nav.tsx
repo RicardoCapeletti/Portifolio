@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { SectionJump } from "@/components/section-jump";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const sections = [
@@ -29,13 +30,13 @@ export function SiteNav({ tone }: { tone: "hero" | "bar" }) {
   const strong = tone === "hero" ? "text-white" : "text-[var(--landing-ink)]";
 
   return (
-    <div className={`flex flex-wrap items-center justify-between gap-x-4 gap-y-3 ${strong}`}>
+    <div className={`@container flex flex-wrap items-center gap-x-3 gap-y-2 ${strong}`}>
       <Link href="/" className={`text-[15px] font-medium tracking-tight ${focus}`}>
         Ricardo
       </Link>
       <nav
         aria-label="Seções"
-        className="order-3 flex w-full flex-wrap items-center gap-x-4 gap-y-2 text-[13px] min-[900px]:order-none min-[900px]:ml-auto min-[900px]:w-auto"
+        className="ml-auto hidden items-center gap-x-4 text-[13px] @min-[40rem]:flex"
       >
         {sections.map((item) =>
           onHome ? (
@@ -49,18 +50,21 @@ export function SiteNav({ tone }: { tone: "hero" | "bar" }) {
           ),
         )}
         {onHome ? (
-          <a href="#contato" className={`inline-flex items-center gap-1.5 transition-colors min-[900px]:ml-2 ${strong} ${focus}`}>
+          <a href="#contato" className={`ml-2 inline-flex items-center gap-1.5 transition-colors ${strong} ${focus}`}>
             Contato
             <span aria-hidden="true">→</span>
           </a>
         ) : (
-          <Link href="/#contato" scroll={false} className={`inline-flex items-center gap-1.5 transition-colors min-[900px]:ml-2 ${strong} ${focus}`}>
+          <Link href="/#contato" scroll={false} className={`ml-2 inline-flex items-center gap-1.5 transition-colors ${strong} ${focus}`}>
             Contato
             <span aria-hidden="true">→</span>
           </Link>
         )}
       </nav>
-      <ThemeToggle />
+      <div className="ml-auto flex items-center gap-2 @min-[40rem]:ml-2">
+        <SectionJump tone={tone} />
+        <ThemeToggle />
+      </div>
     </div>
   );
 }
