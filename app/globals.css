@@ -344,15 +344,22 @@
 }
 
 .landing-thumb {
-  transition: transform 0.45s ease;
+  transition: transform 0.7s ease;
 }
 
-.landing-thumb:hover {
-  transform: translateY(-3px) scale(1.035);
+.mosaic-tile {
+  border: 1px solid rgb(141 113 60 / 42%);
+  border-radius: 0;
+  transition: border-color 0.4s ease;
 }
 
-.landing-cue {
-  animation: landing-cue 2.6s ease-in-out infinite;
+.mosaic-tile:hover,
+.mosaic-tile[aria-current="true"] {
+  border-color: var(--palette-gold);
+}
+
+.mosaic-tile:hover .landing-thumb {
+  transform: scale(1.025);
 }
 
 @keyframes landing-rise {
@@ -364,22 +371,6 @@
     opacity: 1;
     transform: none;
   }
-}
-
-@keyframes landing-cue {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(4px);
-  }
-}
-
-.landing-project {
-  background:
-    radial-gradient(ellipse 75% 62% at 72% 115%, rgb(197 160 89 / 28%), transparent 58%),
-    linear-gradient(165deg, #1c1c20 0%, #161619 46%, #0b0b0d 100%);
 }
 
 @media (prefers-reduced-motion: reduce) {

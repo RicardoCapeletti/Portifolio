@@ -32,7 +32,7 @@ export function FaqList() {
               type="button"
               aria-expanded={open}
               aria-controls={panelId}
-              className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-sm py-3.5 text-left text-sm text-[var(--palette-cream)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--palette-gold)]"
+              className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-sm py-3.5 text-left text-sm text-[var(--landing-ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--palette-gold)]"
               onClick={() => setOpenIndex(open ? null : index)}
             >
               {item.q}
@@ -48,7 +48,7 @@ export function FaqList() {
               className={`grid transition-[grid-template-rows] duration-300 ease-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
             >
               <div className="overflow-hidden">
-                <p className="max-w-md pb-4 text-sm leading-relaxed text-[var(--palette-gray)]">{item.a}</p>
+                <p className="max-w-md pb-4 text-sm leading-relaxed text-[var(--landing-muted)]">{item.a}</p>
               </div>
             </div>
           </div>

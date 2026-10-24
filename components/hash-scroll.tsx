@@ -8,18 +8,30 @@ export function HashScroll() {
   const query = useSearchParams().toString();
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
+    const root = document.documentElement;
+    let restoreTimer: number | undefined;
+
+    const align = () => {
       const hash = window.location.hash.slice(1);
       if (!hash) return;
       const node = document.getElementById(decodeURIComponent(hash));
       if (!node) return;
-      const root = document.documentElement;
       const previous = root.style.scrollBehavior;
       root.style.scrollBehavior = "auto";
       node.scrollIntoView({ block: "start" });
-      root.style.scrollBehavior = previous;
-    }, 40);
-    return () => window.clearTimeout(timer);
+      window.clearTimeout(restoreTimer);
+      restoreTimer = window.setTimeout(() => {
+        root.style.scrollBehavior = previous;
+      }, 50);
+    };
+
+    const first = window.setTimeout(align, 40);
+    const second = window.setTimeout(align, 360);
+    return () => {
+      window.clearTimeout(first);
+      window.clearTimeout(second);
+      window.clearTimeout(restoreTimer);
+    };
   }, [pathname, query]);
 
   return null;
