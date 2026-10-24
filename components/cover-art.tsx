@@ -121,15 +121,17 @@ function CoverMotifMark({ motif }: { motif: CoverMotif }) {
 export function CoverArt({
   piece,
   className,
+  flat = false,
 }: {
   piece: PortfolioPiece;
   className?: string;
+  flat?: boolean;
 }) {
   return (
     <span
       className={`relative block overflow-hidden ${className ?? ""}`}
       style={{
-        background: `linear-gradient(155deg, ${piece.cover.from}, ${piece.cover.to})`,
+        background: flat ? "transparent" : `linear-gradient(155deg, ${piece.cover.from}, ${piece.cover.to})`,
         ["--cover-from" as string]: piece.cover.from,
       }}
       aria-hidden="true"

@@ -66,12 +66,9 @@ function GateTile({
   return (
     <Link href={href} className={`gate-tile flex h-full min-h-[13.5rem] flex-col justify-end p-5 sm:min-h-52 sm:p-6 ${focus}`}>
       {piece ? (
-        <>
-          <span className="pointer-events-none absolute inset-x-0 top-0 h-[72%]" aria-hidden="true">
-            <CoverArt piece={piece} className="h-full w-full" />
-          </span>
-          <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0B0B0D] via-[#0B0B0D]/55 to-transparent" aria-hidden="true" />
-        </>
+        <span className="pointer-events-none absolute inset-x-0 top-0 h-[68%]" aria-hidden="true">
+          <CoverArt piece={piece} flat className="h-full w-full" />
+        </span>
       ) : null}
       <span className="relative">
         <span className="block text-[11px] tracking-[0.18em] text-[var(--palette-gold)] uppercase">{kicker}</span>
