@@ -285,6 +285,26 @@
   }
 }
 
+.landing-hero {
+  background: linear-gradient(
+    180deg,
+    #070b16 0%,
+    #0c1734 16%,
+    #15357a 34%,
+    #2a52d0 48%,
+    #5b46ea 62%,
+    #8f6dff 74%,
+    #d5ccff 88%,
+    #ffffff 100%
+  );
+}
+
+.landing-project {
+  background:
+    radial-gradient(ellipse 80% 70% at 70% 110%, rgba(186, 92, 255, 0.55), transparent 60%),
+    linear-gradient(165deg, #7a5cff 0%, #4a2ad4 42%, #2a1478 100%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

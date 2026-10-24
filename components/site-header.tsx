@@ -30,6 +30,10 @@ function isActive(pathname: string, href: string): boolean {
 export function SiteHeader() {
   const pathname = normalize(usePathname());
 
+  if (pathname === "/") {
+    return null;
+  }
+
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-40 px-4 pt-5 sm:px-6">
       <a
