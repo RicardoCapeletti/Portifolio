@@ -27,7 +27,7 @@ export function SiteFooter() {
           <span className="sr-only">, </span>
           {profile.location}
         </p>
-        <a className="hover:text-[var(--landing-ink)]" href={`mailto:${profile.email}`}>
+        <a className="text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]" href={`mailto:${profile.email}`}>
           {profile.email}
         </a>
       </div>

@@ -21,22 +21,22 @@ export function FaqList() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="mt-6 border-t border-white/15">
+    <div className="mt-6 border-t border-[var(--palette-gold-dark)]/50">
       {questions.map((item, index) => {
         const open = openIndex === index;
         const panelId = `faq-resposta-${index}`;
         return (
-          <div key={item.q} className="border-b border-white/15">
+          <div key={item.q} className="border-b border-[var(--palette-gold-dark)]/50">
             <button
               id={`faq-pergunta-${index}`}
               type="button"
               aria-expanded={open}
               aria-controls={panelId}
-              className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-sm py-3.5 text-left text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
+              className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-sm py-3.5 text-left text-sm text-[var(--palette-cream)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--palette-gold)]"
               onClick={() => setOpenIndex(open ? null : index)}
             >
               {item.q}
-              <span className="text-white/50" aria-hidden="true">
+              <span className="text-[var(--palette-gold)]" aria-hidden="true">
                 {open ? "–" : "+"}
               </span>
             </button>
@@ -48,7 +48,7 @@ export function FaqList() {
               className={`grid transition-[grid-template-rows] duration-300 ease-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
             >
               <div className="overflow-hidden">
-                <p className="max-w-md pb-4 text-sm leading-relaxed text-white/60">{item.a}</p>
+                <p className="max-w-md pb-4 text-sm leading-relaxed text-[var(--palette-gray)]">{item.a}</p>
               </div>
             </div>
           </div>

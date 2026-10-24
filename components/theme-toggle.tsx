@@ -23,7 +23,7 @@ export function ThemeToggle() {
       type="button"
       aria-pressed={dark}
       aria-label={dark ? "Ativar modo claro" : "Ativar modo escuro"}
-      className="inline-grid size-7 place-items-center rounded-full text-current opacity-90 transition-opacity hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
+      className="inline-grid size-7 place-items-center rounded-full text-[var(--palette-gold)] opacity-90 transition-opacity hover:text-[var(--palette-gold-light)] hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--palette-gold)]"
       onClick={() => applyTheme(dark ? "light" : "dark")}
     >
       {dark ? <SunIcon className="size-4" /> : <MoonIcon className="size-4" />}
