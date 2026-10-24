@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Ricardo",
+  name: "Ricardo Capeletti",
   role: "Design de produto e interface",
   location: "São Paulo",
   statement:

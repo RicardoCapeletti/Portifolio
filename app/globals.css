@@ -362,9 +362,7 @@
   overflow: hidden;
   border-radius: 0.7rem;
   border: 1px solid rgb(141 113 60 / 42%);
-  background:
-    radial-gradient(ellipse 80% 70% at 100% 0%, rgb(197 160 89 / 16%), transparent 56%),
-    var(--palette-graphite);
+  background: var(--palette-graphite);
   transition:
     transform 0.45s ease,
     border-color 0.45s ease,
