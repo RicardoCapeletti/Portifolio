@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <main id="conteudo" className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 py-16 sm:px-8">
+    <main id="conteudo" tabIndex={-1} className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 py-16 focus:outline-none sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
         404
       </p>
@@ -15,10 +15,13 @@ export default function NotFound() {
         O endereço não corresponde a um estudo de caso nem a uma seção do
         portfólio.
       </p>
-      <div className="mt-8">
+      <div className="mt-8 flex flex-wrap items-center gap-4">
         <Button asChild className="rounded-full">
-          <Link href="/trabalho">Voltar ao trabalho</Link>
+          <Link href="/">Ir para o início</Link>
         </Button>
+        <Link href="/trabalho" className="text-sm hover:text-foreground">
+          Estudos de caso
+        </Link>
       </div>
     </main>
   );

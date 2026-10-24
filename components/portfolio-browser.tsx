@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 import { CoverArt } from "@/components/cover-art";
 import {
-  categoryAnchor,
-  categoryFromAnchor,
+  categoryFromQuery,
+  categoryHref,
   categoryNotes,
   piecesIn,
   portfolioCategories,
@@ -14,24 +14,27 @@ import {
   type PortfolioCategory,
 } from "@/content/portfolio";
 
-function usePortfolioCategory(): PortfolioCategory | "todos" {
-  const [category, setCategory] = useState<PortfolioCategory | "todos">("todos");
+const focus =
+  "rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current";
 
-  useEffect(() => {
-    const apply = () => {
-      setCategory(categoryFromAnchor(window.location.hash.replace("#", "")));
-    };
-    apply();
-    window.addEventListener("hashchange", apply);
-    return () => window.removeEventListener("hashchange", apply);
-  }, []);
-
-  return category;
+function settleOnProjects() {
+  window.setTimeout(() => {
+    const node = document.getElementById("projetos");
+    if (!node) return;
+    const root = document.documentElement;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    node.scrollIntoView({ block: "start" });
+    root.style.scrollBehavior = previous;
+  }, 80);
 }
 
-export function ServiceRows() {
-  const active = usePortfolioCategory();
+function useActiveCategory(): PortfolioCategory | "todos" {
+  const params = useSearchParams();
+  return categoryFromQuery(params.get("categoria"));
+}
 
+function ServiceList({ active }: { active: PortfolioCategory | "todos" }) {
   return (
     <ul>
       {portfolioCategories.map((name) => {
@@ -39,10 +42,12 @@ export function ServiceRows() {
         const selected = active === name;
         return (
           <li key={name} className="border-b border-neutral-200 last:border-b-0">
-            <a
-              href={`#${categoryAnchor(name)}`}
+            <Link
+              href={categoryHref(name)}
+              scroll={false}
+              onClick={settleOnProjects}
               aria-current={selected ? "true" : undefined}
-              className={`grid grid-cols-[minmax(0,1fr)_3.25rem] items-center gap-x-3 gap-y-1 py-3.5 transition-colors min-[900px]:grid-cols-[minmax(0,0.9fr)_4.25rem_minmax(0,1.15fr)] min-[900px]:gap-3 ${selected ? "bg-neutral-50" : "hover:bg-neutral-50"}`}
+              className={`grid grid-cols-[minmax(0,1fr)_3.25rem] items-center gap-x-3 gap-y-1 py-3.5 transition-colors min-[900px]:grid-cols-[minmax(0,0.9fr)_4.25rem_minmax(0,1.15fr)] min-[900px]:gap-3 ${focus} ${selected ? "bg-neutral-50" : "hover:bg-neutral-50"}`}
             >
               <span className="col-start-1 row-start-1 text-[15px] leading-tight font-medium tracking-tight text-neutral-950">
                 {name}
@@ -56,7 +61,7 @@ export function ServiceRows() {
               <span className="col-start-1 row-start-2 text-[12px] leading-snug text-neutral-500 min-[900px]:col-start-3 min-[900px]:row-start-1">
                 {categoryNotes[name]}
               </span>
-            </a>
+            </Link>
           </li>
         );
       })}
@@ -64,8 +69,15 @@ export function ServiceRows() {
   );
 }
 
-export function ProjectGrid() {
-  const active = usePortfolioCategory();
+export function ServiceRows() {
+  return <ServiceList active={useActiveCategory()} />;
+}
+
+export function ServiceRowsFallback() {
+  return <ServiceList active="todos" />;
+}
+
+function ProjectList({ active }: { active: PortfolioCategory | "todos" }) {
   const visible =
     active === "todos" ? portfolioPieces : portfolioPieces.filter((piece) => piece.category === active);
   const countLabel = visible.length === 1 ? "1 peça" : `${visible.length} peças`;
@@ -78,25 +90,32 @@ export function ProjectGrid() {
           <p className="mt-2 text-sm text-neutral-500">{countLabel}</p>
         </div>
         <div role="group" aria-label="Filtrar por categoria" className="flex flex-wrap gap-x-4 gap-y-2 text-[13px]">
-          <a
-            href="#projetos"
+          <Link
+            href={categoryHref("todos")}
+            scroll={false}
+            onClick={settleOnProjects}
             aria-current={active === "todos" ? "true" : undefined}
-            className={active === "todos" ? "text-neutral-950" : "text-neutral-500 hover:text-neutral-950"}
+            className={active === "todos" ? `text-neutral-950 ${focus}` : `text-neutral-500 hover:text-neutral-950 ${focus}`}
           >
             Todos
-          </a>
+          </Link>
           {portfolioCategories.map((category) => {
             const selected = active === category;
             return (
-              <a
+              <Link
                 key={category}
-                id={categoryAnchor(category)}
-                href={`#${categoryAnchor(category)}`}
+                href={categoryHref(category)}
+                scroll={false}
+                onClick={settleOnProjects}
                 aria-current={selected ? "true" : undefined}
-                className={selected ? "text-neutral-950 underline decoration-from-font underline-offset-4" : "text-neutral-500 hover:text-neutral-950"}
+                className={
+                  selected
+                    ? `text-neutral-950 underline decoration-from-font underline-offset-4 ${focus}`
+                    : `text-neutral-500 hover:text-neutral-950 ${focus}`
+                }
               >
                 {category}
-              </a>
+              </Link>
             );
           })}
         </div>
@@ -106,7 +125,7 @@ export function ProjectGrid() {
           <li key={piece.slug}>
             <Link
               href={`/pecas/${piece.slug}`}
-              className="group block overflow-hidden rounded-2xl bg-white text-neutral-950 ring-1 ring-black/5"
+              className={`group block overflow-hidden rounded-2xl bg-white text-neutral-950 ring-1 ring-black/5 ${focus}`}
             >
               <CoverArt piece={piece} className="landing-thumb aspect-[4/3] w-full" />
               <span className="block px-3 py-3">
@@ -119,4 +138,12 @@ export function ProjectGrid() {
       </ul>
     </div>
   );
+}
+
+export function ProjectGrid() {
+  return <ProjectList active={useActiveCategory()} />;
+}
+
+export function ProjectGridFallback() {
+  return <ProjectList active="todos" />;
 }

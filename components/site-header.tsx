@@ -22,7 +22,7 @@ export function SiteHeader() {
     <header className="border-b border-[var(--landing-line)] bg-[var(--landing-frame)] px-4 py-4 text-[var(--landing-ink)] sm:px-6">
       <a
         href="#conteudo"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-[var(--landing-frame)] focus:px-3 focus:py-2"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-[var(--landing-frame)] focus:px-3 focus:py-2 focus:outline focus:outline-2 focus:outline-offset-2"
       >
         Ir para o conteúdo
       </a>

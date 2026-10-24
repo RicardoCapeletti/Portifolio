@@ -1,8 +1,10 @@
 import { PlusIcon } from "lucide-react";
 import Link from "next/link";
+import { Suspense } from "react";
 
 import { CoverArt } from "@/components/cover-art";
-import { ProjectGrid, ServiceRows } from "@/components/portfolio-browser";
+import { FaqList } from "@/components/faq-list";
+import { ProjectGrid, ProjectGridFallback, ServiceRows, ServiceRowsFallback } from "@/components/portfolio-browser";
 import { SiteNav } from "@/components/site-nav";
 import { profile } from "@/content/profile";
 import { getFeaturedPiece, portfolioPieces } from "@/content/portfolio";
@@ -12,21 +14,6 @@ const avatarTones = [
   "linear-gradient(160deg, #f6e2c4, #c4965c)",
   "linear-gradient(160deg, #d5d8e4, #7d8498)",
   "linear-gradient(160deg, #e4d4f5, #8d74c9)",
-] as const;
-
-const questions = [
-  {
-    q: "Que tipo de peça entra no portfólio?",
-    a: "Logos, banners, web design, cartões e design de produtos. Cada estudo mostra a peça e a decisão que a formou.",
-  },
-  {
-    q: "Como um trabalho começa?",
-    a: "Com um problema pequeno o bastante para acompanhar até a entrega. A pesquisa fica no caso, não numa pasta separada.",
-  },
-  {
-    q: "O que fica visível além da capa?",
-    a: "Anotações, alternativas que ficaram de fora e o caminho entre o esboço e a peça final.",
-  },
 ] as const;
 
 function AvatarRow({
@@ -59,10 +46,14 @@ export function LandingHome() {
   const heroThumbs = portfolioPieces.slice(0, 3);
 
   return (
-    <main id="conteudo" className="min-h-svh overflow-x-clip bg-[var(--landing-frame)] text-[var(--landing-ink)]">
+    <main
+      id="conteudo"
+      tabIndex={-1}
+      className="min-h-svh overflow-x-clip bg-[var(--landing-frame)] text-[var(--landing-ink)] focus:outline-none"
+    >
       <a
-        href="#painel"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-3 focus:py-2 focus:text-neutral-950"
+        href="#conteudo"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-3 focus:py-2 focus:text-neutral-950 focus:outline focus:outline-2 focus:outline-offset-2"
       >
         Ir para o conteúdo
       </a>
@@ -179,7 +170,9 @@ export function LandingHome() {
             <h2 id="servicos-titulo" className="sr-only">
               Serviços
             </h2>
-            <ServiceRows />
+            <Suspense fallback={<ServiceRowsFallback />}>
+              <ServiceRows />
+            </Suspense>
           </section>
 
           <Link
@@ -226,26 +219,7 @@ export function LandingHome() {
                 Respostas curtas sobre o tipo de peça, o começo de um trabalho e o que fica visível no processo.
               </p>
             </div>
-            <div className="mt-6 border-t border-white/15">
-              {questions.map((item) => (
-                <details key={item.q} className="group border-b border-white/15">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5 text-sm text-white [&::-webkit-details-marker]:hidden">
-                    {item.q}
-                    <span className="text-white/50 group-open:hidden" aria-hidden="true">
-                      +
-                    </span>
-                    <span className="hidden text-white/50 group-open:inline" aria-hidden="true">
-                      –
-                    </span>
-                  </summary>
-                  <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-open:grid-rows-[1fr]">
-                    <div className="overflow-hidden">
-                      <p className="max-w-md pb-4 text-sm leading-relaxed text-white/60">{item.a}</p>
-                    </div>
-                  </div>
-                </details>
-              ))}
-            </div>
+            <FaqList />
             <div id="contato" className="scroll-mt-6 pt-8">
               <p className="text-[11px] tracking-[0.18em] text-white/45 uppercase">Contato</p>
               <a className="mt-2 inline-block text-sm text-white hover:text-white/80" href={`mailto:${profile.email}`}>
@@ -259,7 +233,9 @@ export function LandingHome() {
 
       <section id="projetos" className="scroll-mt-6 px-3 pb-10 sm:px-4">
         <div className="mx-auto max-w-[1600px] rounded-[1.35rem] bg-white/70 px-4 py-6 text-neutral-950 ring-1 ring-black/5 sm:px-6 dark:bg-white dark:ring-0">
-          <ProjectGrid />
+          <Suspense fallback={<ProjectGridFallback />}>
+            <ProjectGrid />
+          </Suspense>
           <p className="mt-6 text-sm text-neutral-500">
             <Link href="/trabalho" className="underline decoration-neutral-300 underline-offset-4 hover:text-neutral-950">
               Estudos de caso

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { CoverArt } from "@/components/cover-art";
-import { categoryAnchor, getPortfolioPiece, portfolioPieces } from "@/content/portfolio";
+import { categoryHref, getPortfolioPiece, neighboringPieces, portfolioPieces } from "@/content/portfolio";
 
 export const dynamicParams = false;
 
@@ -45,10 +45,12 @@ export default async function PecaPage({
     notFound();
   }
 
+  const { previous, next } = neighboringPieces(piece.slug);
+
   return (
-    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
+    <main id="conteudo" tabIndex={-1} className="mx-auto w-full max-w-6xl px-5 py-12 focus:outline-none sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
-        <Link href={`/#${categoryAnchor(piece.category)}`} className="hover:text-foreground">
+        <Link href={categoryHref(piece.category)} className="rounded-sm hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
           {piece.category}
         </Link>
       </p>
@@ -56,11 +58,21 @@ export default async function PecaPage({
       <p className="mt-4 text-sm text-muted-foreground">{piece.year}</p>
       <CoverArt piece={piece} className="mt-8 aspect-[16/9] w-full rounded-[1.5rem]" />
       <p className="mt-8 max-w-2xl text-lg leading-relaxed">{piece.summary}</p>
-      <p className="mt-8">
-        <Link href="/#projetos" className="text-sm tracking-[0.14em] uppercase hover:text-foreground">
+      <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+        <Link href="/#projetos" scroll={false} className="tracking-[0.14em] uppercase hover:text-foreground">
           Voltar aos projetos
         </Link>
-      </p>
+        {previous ? (
+          <Link href={`/pecas/${previous.slug}`} className="hover:text-foreground">
+            Anterior: {previous.title}
+          </Link>
+        ) : null}
+        {next ? (
+          <Link href={`/pecas/${next.slug}`} className="hover:text-foreground">
+            Próxima: {next.title}
+          </Link>
+        ) : null}
+      </div>
     </main>
   );
 }

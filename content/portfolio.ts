@@ -156,6 +156,30 @@ export function categoryFromAnchor(anchor: string): PortfolioCategory | "todos" 
   return match ?? "todos";
 }
 
+export function categoryFromQuery(value: string | null | undefined): PortfolioCategory | "todos" {
+  if (!value) return "todos";
+  const named = portfolioCategories.find((category) => category === value);
+  if (named) return named;
+  return categoryFromAnchor(value);
+}
+
+export function categoryHref(category: PortfolioCategory | "todos"): string {
+  if (category === "todos") return "/#projetos";
+  return `/?categoria=${encodeURIComponent(category)}#projetos`;
+}
+
+export function neighboringPieces(slug: string): {
+  previous?: PortfolioPiece;
+  next?: PortfolioPiece;
+} {
+  const index = portfolioPieces.findIndex((piece) => piece.slug === slug);
+  return {
+    previous: index > 0 ? portfolioPieces[index - 1] : undefined,
+    next:
+      index >= 0 && index < portfolioPieces.length - 1 ? portfolioPieces[index + 1] : undefined,
+  };
+}
+
 export function piecesIn(category: PortfolioCategory): PortfolioPiece[] {
   return portfolioPieces.filter((piece) => piece.category === category);
 }
