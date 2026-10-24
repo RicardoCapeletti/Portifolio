@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 
+import { HashScroll } from "@/components/hash-scroll";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { profile } from "@/content/profile";
@@ -44,6 +45,9 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <Suspense fallback={null}>
+          <HashScroll />
+        </Suspense>
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />

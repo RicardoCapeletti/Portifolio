@@ -53,7 +53,7 @@ export default async function ProjectPage({
   const next = getNextProject(project.slug);
 
   return (
-    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8">
+    <main id="conteudo" tabIndex={-1} className="mx-auto w-full max-w-6xl px-5 py-12 focus:outline-none sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
         <Link href="/trabalho" className="hover:text-foreground">
           Trabalho
