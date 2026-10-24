@@ -1,32 +1,19 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-
 import { SiteNav } from "@/components/site-nav";
 
-function normalize(path: string): string {
-  if (path.length > 1 && path.endsWith("/")) {
-    return path.slice(0, -1);
-  }
-  return path;
-}
-
 export function SiteHeader() {
-  const pathname = normalize(usePathname());
-
-  if (pathname === "/") {
-    return null;
-  }
-
   return (
-    <header className="border-b border-[var(--landing-line)] bg-[var(--landing-frame)] px-4 py-4 text-[var(--landing-ink)] sm:px-6">
+    <header className="fixed inset-x-0 top-0 z-50 flex h-[var(--site-header)] items-center px-4 text-[var(--landing-ink)] sm:px-6">
+      <div
+        className="pointer-events-none absolute inset-0 border-b border-[var(--landing-line)] bg-[#efece7]/80 backdrop-blur-md dark:bg-[#070708]/80"
+        aria-hidden="true"
+      />
       <a
         href="#conteudo"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-full focus:bg-[var(--landing-frame)] focus:px-3 focus:py-2 focus:outline focus:outline-2 focus:outline-offset-2"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-4 focus:z-10 focus:rounded-full focus:bg-[var(--landing-frame)] focus:px-3 focus:py-2 focus:outline focus:outline-2 focus:outline-offset-2"
       >
         Ir para o conteúdo
       </a>
-      <div className="mx-auto max-w-[1600px]">
+      <div className="relative mx-auto w-full max-w-[1600px]">
         <SiteNav tone="bar" />
       </div>
     </header>

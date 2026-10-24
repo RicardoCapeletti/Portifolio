@@ -49,7 +49,7 @@ export default function RootLayout({
           <HashScroll />
         </Suspense>
         <SiteHeader />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1 pt-[var(--site-header)]">{children}</div>
         <SiteFooter />
       </body>
     </html>

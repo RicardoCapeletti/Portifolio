@@ -53,6 +53,7 @@
   --landing-ink: #161616;
   --landing-muted: rgb(22 22 22 / 62%);
   --landing-line: rgb(22 22 22 / 12%);
+  --site-header: 4.5rem;
   --radius: 0.9rem;
   --background: oklch(0.965 0.004 250);
   --foreground: oklch(0.18 0.012 260);
@@ -137,6 +138,15 @@
 
   html.dark {
     color-scheme: dark;
+  }
+
+  #inicio,
+  #sobre,
+  #servicos,
+  #projetos,
+  #faq,
+  #contato {
+    scroll-margin-top: calc(var(--site-header) + 0.75rem);
   }
 
   body {

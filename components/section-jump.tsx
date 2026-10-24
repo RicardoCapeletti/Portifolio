@@ -165,7 +165,7 @@ export function SectionJump({ tone }: { tone: "hero" | "bar" }) {
           id={menuId}
           role="menu"
           aria-label="Seções"
-          className={`absolute top-[calc(100%+0.4rem)] right-0 z-40 min-w-40 overflow-hidden rounded-xl border py-1 ${menuTone}`}
+          className={`absolute top-[calc(100%+0.4rem)] right-0 z-50 min-w-40 overflow-hidden rounded-xl border py-1 ${menuTone}`}
           onKeyDown={onMenuKeyDown}
         >
           {sections.map((section, index) => {
