@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { CoverArt } from "@/components/cover-art";
 import { profile } from "@/content/profile";
 import {
   categoryHref,
@@ -55,21 +54,14 @@ function GateTile({
   kicker,
   title,
   note,
-  piece,
 }: {
   href: string;
   kicker: string;
   title: string;
   note: string;
-  piece?: PortfolioPiece;
 }) {
   return (
     <Link href={href} className={`gate-tile flex h-full min-h-[13.5rem] flex-col justify-end p-5 sm:min-h-52 sm:p-6 ${focus}`}>
-      {piece ? (
-        <span className="pointer-events-none absolute inset-x-0 top-0 h-[68%]" aria-hidden="true">
-          <CoverArt piece={piece} flat className="h-full w-full" />
-        </span>
-      ) : null}
       <span className="relative">
         <span className="block text-[11px] tracking-[0.18em] text-[var(--palette-gold)] uppercase">{kicker}</span>
         <span className="mt-2 block text-[clamp(1.35rem,2vw,1.85rem)] leading-tight font-medium tracking-[-0.03em] text-[var(--palette-cream)]">
@@ -103,7 +95,6 @@ function TileFace({ tile }: { tile: HomeTile }) {
           kicker={tile.piece.category}
           title={tile.piece.title}
           note={tile.piece.summary}
-          piece={tile.piece}
         />
       );
     default: {
