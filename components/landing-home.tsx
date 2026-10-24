@@ -123,10 +123,10 @@ export function LandingHome() {
     <main
       id="conteudo"
       tabIndex={-1}
-      className="mx-auto flex min-h-[calc(100svh-var(--site-header))] w-full max-w-[1500px] flex-col px-3 pb-3 focus:outline-none sm:px-5 sm:pb-4"
+      className="mx-auto flex min-h-[calc(100svh-var(--site-header))] w-full max-w-[1500px] flex-col px-3 pb-2 focus:outline-none sm:px-4 sm:pb-3"
     >
       <h1 className="sr-only">Desenhar presença com clareza</h1>
-      <ul className="gate-grid grid flex-1 grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3">
+      <ul className="gate-grid grid flex-1 grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3">
         {tiles.map((tile) => (
           <li key={tileKey(tile)} className="min-h-0">
             <TileFace tile={tile} />

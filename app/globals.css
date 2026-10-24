@@ -65,7 +65,7 @@
   --landing-surface: var(--palette-graphite);
   --landing-on-surface: var(--palette-cream);
   --landing-on-surface-muted: var(--palette-gray);
-  --site-header: 5.25rem;
+  --site-header: 4.5rem;
   --radius: 0.9rem;
   --background: var(--palette-cream);
   --foreground: var(--palette-graphite);
@@ -360,7 +360,7 @@
 .gate-tile {
   position: relative;
   overflow: hidden;
-  border-radius: 1.7rem;
+  border-radius: 0.7rem;
   border: 1px solid rgb(141 113 60 / 42%);
   background:
     radial-gradient(ellipse 80% 70% at 100% 0%, rgb(197 160 89 / 16%), transparent 56%),
