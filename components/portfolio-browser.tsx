@@ -130,7 +130,8 @@ function ProjectList({ active }: { active: PortfolioCategory | "todos" }) {
               <CoverArt piece={piece} className="landing-thumb aspect-[4/3] w-full" />
               <span className="block px-3 py-3">
                 <span className="block text-sm font-medium tracking-tight">{piece.title}</span>
-                <span className="mt-1 block text-[12px] text-neutral-500">{piece.category}</span>
+                <span className="mt-1 line-clamp-2 text-[12px] leading-snug text-neutral-500">{piece.summary}</span>
+                <span className="mt-2 block text-[11px] tracking-[0.12em] text-neutral-400 uppercase">{piece.category}</span>
               </span>
             </Link>
           </li>
