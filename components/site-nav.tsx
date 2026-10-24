@@ -14,7 +14,7 @@ const sections = [
 ] as const;
 
 const focus =
-  "rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current";
+  "rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--palette-gold)]";
 
 function normalize(path: string): string {
   if (path.length > 1 && path.endsWith("/")) {
@@ -50,12 +50,12 @@ export function SiteNav({ tone }: { tone: "hero" | "bar" }) {
           ),
         )}
         {onHome ? (
-          <a href="#contato" className={`ml-2 inline-flex items-center gap-1.5 transition-colors ${strong} ${focus}`}>
+          <a href="#contato" className={`ml-2 inline-flex items-center gap-1.5 text-[var(--palette-gold)] transition-colors hover:text-[var(--palette-gold-light)] ${focus}`}>
             Contato
             <span aria-hidden="true">→</span>
           </a>
         ) : (
-          <Link href="/#contato" scroll={false} className={`ml-2 inline-flex items-center gap-1.5 transition-colors ${strong} ${focus}`}>
+          <Link href="/#contato" scroll={false} className={`ml-2 inline-flex items-center gap-1.5 text-[var(--palette-gold)] transition-colors hover:text-[var(--palette-gold-light)] ${focus}`}>
             Contato
             <span aria-hidden="true">→</span>
           </Link>

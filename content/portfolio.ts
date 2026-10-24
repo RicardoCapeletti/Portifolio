@@ -180,7 +180,7 @@ export const portfolioPieces: PortfolioPiece[] = [
     description:
       "A Oficina Vão queria uma luminária que coubesse na mesa de jantar sem parecer abajur de hotel. O globo fica perto do tampo e a luz sai para baixo. O pé é um cilindro de alumínio, e o fio sobe por dentro. O nome entra gravado, pequeno, na base.",
     featured: true,
-    cover: { from: "#24143f", to: "#c4b5fd", motif: "lamp" },
+    cover: { from: "#161619", to: "#c5a059", motif: "lamp" },
   },
   {
     slug: "grao-miudo",

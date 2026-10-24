@@ -4,7 +4,7 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 flex h-[var(--site-header)] items-center px-4 text-[var(--landing-ink)] sm:px-6">
       <div
-        className="pointer-events-none absolute inset-0 border-b border-[var(--landing-line)] bg-[#efece7]/80 backdrop-blur-md dark:bg-[#070708]/80"
+        className="pointer-events-none absolute inset-0 border-b border-[var(--landing-line)] bg-[#F5F3EE]/88 backdrop-blur-md dark:bg-[#0B0B0D]/88"
         aria-hidden="true"
       />
       <a

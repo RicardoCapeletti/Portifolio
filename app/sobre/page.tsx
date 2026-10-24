@@ -37,14 +37,14 @@ export default function SobrePage() {
           </h2>
           <ul className="mt-6 space-y-4">
             <li>
-              <a className="text-lg hover:text-foreground" href={`mailto:${profile.email}`}>
+              <a className="text-lg text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]" href={`mailto:${profile.email}`}>
                 {profile.email}
               </a>
             </li>
             {profile.links.map((link) => (
               <li key={link.href}>
                 <a
-                  className="text-lg hover:text-foreground"
+                  className="text-lg text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]"
                   href={link.href}
                   rel="noreferrer"
                   target="_blank"

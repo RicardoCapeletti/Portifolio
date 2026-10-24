@@ -50,7 +50,7 @@ export default async function PecaPage({
   return (
     <main id="conteudo" tabIndex={-1} className="mx-auto w-full max-w-6xl px-5 py-12 focus:outline-none sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
-        <Link href={categoryHref(piece.category)} className="rounded-sm hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
+        <Link href={categoryHref(piece.category)} className="rounded-sm text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--palette-gold)]">
           {piece.category}
         </Link>
       </p>
@@ -77,16 +77,16 @@ export default async function PecaPage({
       </dl>
       <p className="mt-8 max-w-2xl text-base leading-relaxed">{piece.description}</p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
-        <Link href="/#projetos" scroll={false} className="tracking-[0.14em] uppercase hover:text-foreground">
+        <Link href="/#projetos" scroll={false} className="tracking-[0.14em] text-[var(--palette-gold)] uppercase hover:text-[var(--palette-gold-light)]">
           Voltar aos projetos
         </Link>
         {previous ? (
-          <Link href={`/pecas/${previous.slug}`} className="hover:text-foreground">
+          <Link href={`/pecas/${previous.slug}`} className="text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]">
             Anterior: {previous.title}
           </Link>
         ) : null}
         {next ? (
-          <Link href={`/pecas/${next.slug}`} className="hover:text-foreground">
+          <Link href={`/pecas/${next.slug}`} className="text-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]">
             Próxima: {next.title}
           </Link>
         ) : null}

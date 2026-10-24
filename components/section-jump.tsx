@@ -17,7 +17,7 @@ const sections = [
 type SectionId = (typeof sections)[number]["id"];
 
 const focus =
-  "rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current";
+  "rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--palette-gold)]";
 
 function normalize(path: string): string {
   if (path.length > 1 && path.endsWith("/")) {
@@ -131,18 +131,14 @@ export function SectionJump({ tone }: { tone: "hero" | "bar" }) {
 
   const buttonTone =
     tone === "hero"
-      ? "border-white/30 text-white hover:border-white/60 hover:bg-white/10"
-      : "border-[var(--landing-line)] text-[var(--landing-ink)] hover:bg-black/5 dark:hover:bg-white/10";
+      ? "border-[var(--palette-gold-dark)] text-[var(--palette-cream)] hover:border-[var(--palette-gold)] hover:text-[var(--palette-gold-light)]"
+      : "border-[var(--palette-gold-dark)] text-[var(--landing-ink)] hover:border-[var(--palette-gold)] hover:text-[var(--palette-gold)]";
 
   const menuTone =
-    tone === "hero"
-      ? "border-black/10 bg-white text-neutral-950 shadow-[0_16px_40px_rgba(0,0,0,0.16)]"
-      : "border-[var(--landing-line)] bg-[var(--landing-frame)] text-[var(--landing-ink)] shadow-[0_16px_40px_rgba(0,0,0,0.12)]";
+    "border-[var(--palette-gold-dark)] bg-[var(--palette-graphite)] text-[var(--palette-cream)] shadow-[0_16px_40px_rgba(0,0,0,0.28)]";
 
   const itemTone =
-    tone === "hero"
-      ? "hover:bg-neutral-100 focus-visible:bg-neutral-100"
-      : "hover:bg-black/5 focus-visible:bg-black/5 dark:hover:bg-white/10 dark:focus-visible:bg-white/10";
+    "hover:bg-white/5 hover:text-[var(--palette-gold-light)] focus-visible:bg-white/5 focus-visible:text-[var(--palette-gold-light)]";
 
   return (
     <div ref={rootRef} className="relative">
