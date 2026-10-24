@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <main id="conteudo" className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pt-28 pb-16 sm:px-8">
+    <main id="conteudo" className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 py-16 sm:px-8">
       <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
         404
       </p>

@@ -3,7 +3,6 @@
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useSyncExternalStore } from "react";
 
-import { Button } from "@/components/ui/button";
 import { applyTheme, readTheme, type Theme } from "@/lib/theme";
 
 function subscribe(onStoreChange: () => void): () => void {
@@ -20,16 +19,14 @@ export function ThemeToggle() {
   const dark = theme === "dark";
 
   return (
-    <Button
+    <button
       type="button"
-      variant="ghost"
-      size="icon-sm"
       aria-pressed={dark}
-      aria-label={dark ? "Usar tema claro" : "Usar tema escuro"}
-      className="rounded-full border border-border bg-background/55 text-muted-foreground backdrop-blur-md"
+      aria-label={dark ? "Ativar modo claro" : "Ativar modo escuro"}
+      className="inline-grid size-7 place-items-center rounded-full text-current opacity-90 transition-opacity hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current"
       onClick={() => applyTheme(dark ? "light" : "dark")}
     >
-      {dark ? <SunIcon /> : <MoonIcon />}
-    </Button>
+      {dark ? <SunIcon className="size-4" /> : <MoonIcon className="size-4" />}
+    </button>
   );
 }

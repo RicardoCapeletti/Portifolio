@@ -1,0 +1,66 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import { CoverArt } from "@/components/cover-art";
+import { categoryAnchor, getPortfolioPiece, portfolioPieces } from "@/content/portfolio";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return portfolioPieces.map((piece) => ({ slug: piece.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const piece = getPortfolioPiece(slug);
+  if (!piece) {
+    return { title: "Peça não encontrada" };
+  }
+
+  return {
+    title: piece.title,
+    description: piece.summary,
+    openGraph: {
+      title: piece.title,
+      description: piece.summary,
+      locale: "pt_BR",
+      type: "article",
+    },
+  };
+}
+
+export default async function PecaPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const piece = getPortfolioPiece(slug);
+  if (!piece) {
+    notFound();
+  }
+
+  return (
+    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
+      <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
+        <Link href={`/#${categoryAnchor(piece.category)}`} className="hover:text-foreground">
+          {piece.category}
+        </Link>
+      </p>
+      <h1 className="mt-4 font-display text-5xl font-medium tracking-tight sm:text-7xl">{piece.title}</h1>
+      <p className="mt-4 text-sm text-muted-foreground">{piece.year}</p>
+      <CoverArt piece={piece} className="mt-8 aspect-[16/9] w-full rounded-[1.5rem]" />
+      <p className="mt-8 max-w-2xl text-lg leading-relaxed">{piece.summary}</p>
+      <p className="mt-8">
+        <Link href="/#projetos" className="text-sm tracking-[0.14em] uppercase hover:text-foreground">
+          Voltar aos projetos
+        </Link>
+      </p>
+    </main>
+  );
+}

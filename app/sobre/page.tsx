@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function SobrePage() {
   return (
-    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8">
+    <main id="conteudo" className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8">
       <div className="grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-7">
           <p className="text-sm tracking-[0.18em] text-muted-foreground uppercase">
