@@ -77,7 +77,7 @@ export default async function PecaPage({
       </dl>
       <p className="mt-8 max-w-2xl text-base leading-relaxed">{piece.description}</p>
       <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
-        <Link href="/#projetos" scroll={false} className="tracking-[0.14em] text-[var(--palette-gold)] uppercase hover:text-[var(--palette-gold-light)]">
+        <Link href="/projetos" className="tracking-[0.14em] text-[var(--palette-gold)] uppercase hover:text-[var(--palette-gold-light)]">
           Voltar aos projetos
         </Link>
         {previous ? (

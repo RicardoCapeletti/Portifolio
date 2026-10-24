@@ -65,7 +65,7 @@
   --landing-surface: var(--palette-graphite);
   --landing-on-surface: var(--palette-cream);
   --landing-on-surface-muted: var(--palette-gray);
-  --site-header: 4.5rem;
+  --site-header: 5.25rem;
   --radius: 0.9rem;
   --background: var(--palette-cream);
   --foreground: var(--palette-graphite);
@@ -349,8 +349,73 @@
 
 .mosaic-tile {
   border: 1px solid rgb(141 113 60 / 42%);
-  border-radius: 0;
+  border-radius: 1.25rem;
   transition: border-color 0.4s ease;
+}
+
+.gate-grid {
+  animation: landing-rise 0.7s ease both;
+}
+
+.gate-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.7rem;
+  border: 1px solid rgb(141 113 60 / 42%);
+  background:
+    radial-gradient(ellipse 80% 70% at 100% 0%, rgb(197 160 89 / 16%), transparent 56%),
+    var(--palette-graphite);
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.gate-tile:hover,
+.gate-tile:focus-visible {
+  transform: translateY(-6px) scale(1.015);
+  border-color: var(--palette-gold);
+  box-shadow:
+    0 16px 36px rgb(0 0 0 / 32%),
+    0 0 28px rgb(197 160 89 / 16%);
+}
+
+.gate-note {
+  display: block;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    max-height 0.45s ease,
+    opacity 0.35s ease,
+    transform 0.45s ease,
+    margin-top 0.45s ease;
+}
+
+.gate-tile:hover .gate-note,
+.gate-tile:focus-visible .gate-note {
+  max-height: 4.8rem;
+  margin-top: 0.45rem;
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 1023px) {
+  .gate-note {
+    max-height: 4.8rem;
+    margin-top: 0.45rem;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (hover: none) {
+  .gate-tile:hover,
+  .gate-tile:focus-visible {
+    transform: none;
+  }
 }
 
 .mosaic-tile:hover,
