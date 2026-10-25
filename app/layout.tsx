@@ -6,6 +6,7 @@ import { HashScroll } from "@/components/hash-scroll";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { profile } from "@/content/profile";
+import { wordmarkFont } from "@/lib/fonts";
 import { themeInitScript } from "@/lib/theme";
 
 import "./globals.css";
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${sans.variable} h-full antialiased`}
+      className={`${sans.variable} ${wordmarkFont.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col font-sans">
