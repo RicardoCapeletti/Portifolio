@@ -11,14 +11,14 @@ const focus =
 
 export function SiteNav() {
   return (
-    <div className="flex w-full items-center gap-3">
+    <div className="relative flex h-full w-full items-center justify-center">
       <Link
         href="/"
-        className={`${wordmarkFont.className} text-[1.15rem] leading-none font-medium tracking-[0.1em] text-[var(--palette-cream)] uppercase sm:text-[1.7rem] sm:tracking-[0.16em] ${focus}`}
+        className={`${wordmarkFont.className} text-center text-[1.15rem] leading-none font-medium tracking-[0.1em] text-[var(--palette-cream)] uppercase sm:text-[1.7rem] sm:tracking-[0.16em] ${focus}`}
       >
         {profile.name}
       </Link>
-      <div className="ml-auto">
+      <div className="absolute inset-y-0 right-0 z-10 flex items-center">
         <ThemeToggle />
       </div>
     </div>
