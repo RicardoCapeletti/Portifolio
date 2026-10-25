@@ -8,9 +8,13 @@ export const profile = {
   links: [
     { label: "GitHub", href: "https://github.com" },
   ],
+  aboutHeading: "Olá, sou Ricardo Capeletti.",
+  aboutLede: "Designer gráfico | Criatividade, estratégia e soluções visuais.",
   about: [
-    "Desenho interfaces, fluxos e marcas para produtos pequenos o bastante para acompanhar do problema à entrega. Moro em São Paulo.",
-    "Gosto de processo visível: anotações, grelhas e alternativas que ficaram de fora. Cada estudo de caso nesta página guarda esse caminho, não só a capa.",
-    "O trabalho pede calma tipográfica, uma decisão que caiba num carimbo, ou um fluxo que alguém usa com uma mão só. É por aqui.",
+    "Atuo na área de design desde os 18 anos, construindo uma trajetória marcada pela versatilidade e pela busca de soluções visuais criativas e eficientes.",
+    "Durante cinco anos em uma produtora cultural, desenvolvi projetos gráficos para diferentes formatos e necessidades, incluindo materiais promocionais, folders, banners, peças para redes sociais, tratamento de imagens e web design, com foco na criação de interfaces e front-end de páginas.",
+    "Posteriormente, direcionei minha experiência para o universo 3D, desenvolvendo projetos de visualização arquitetônica e colaborando por três anos com a profissional Sabrine Santos. Essa experiência ampliou minha visão estética e meu domínio sobre composição, iluminação e apresentação visual.",
+    "Hoje, atuo como freelancer, com foco em design gráfico, unindo experiência técnica, sensibilidade estética e criatividade para transformar ideias em projetos visuais marcantes, funcionais e alinhados aos objetivos de cada cliente.",
+    "Meu objetivo é criar designs que vão além da estética: que comuniquem, conectem e gerem impacto.",
   ],
 };
