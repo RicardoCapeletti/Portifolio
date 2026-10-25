@@ -1,6 +1,17 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 import { SiteNav } from "@/components/site-nav";
 
+function isHome(path: string): boolean {
+  const normalized = path.length > 1 && path.endsWith("/") ? path.slice(0, -1) : path;
+  return normalized === "/";
+}
+
 export function SiteHeader() {
+  const home = isHome(usePathname());
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-2 sm:px-4 sm:pt-2.5">
       <a
@@ -9,8 +20,14 @@ export function SiteHeader() {
       >
         Ir para o conteúdo
       </a>
-      <div className="relative mx-auto flex h-11 max-w-[1500px] items-center rounded-[0.7rem] border border-[var(--palette-gold-dark)] bg-[var(--palette-graphite)]/95 px-4 text-[var(--palette-cream)] shadow-[0_12px_40px_rgb(0_0_0/0.28)] backdrop-blur-md">
-        <SiteNav />
+      <div className="mx-auto flex max-w-[1500px] justify-end">
+        <div
+          className={`relative flex h-11 items-center rounded-[0.7rem] border border-[var(--palette-gold-dark)] bg-[var(--palette-graphite)]/95 text-[var(--palette-cream)] shadow-[0_12px_40px_rgb(0_0_0/0.28)] backdrop-blur-md ${
+            home ? "w-fit px-1.5" : "w-full px-4"
+          }`}
+        >
+          <SiteNav showWordmark={!home} />
+        </div>
       </div>
     </header>
   );

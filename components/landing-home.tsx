@@ -147,9 +147,14 @@ export function LandingHome() {
     <main
       id="conteudo"
       tabIndex={-1}
-      className="mx-auto flex min-h-[calc(100svh-var(--site-header))] w-full max-w-[1500px] flex-col px-3 pb-2 focus:outline-none sm:px-4 sm:pb-3"
+      className="mx-auto flex min-h-[calc(100svh-var(--site-header))] w-full max-w-[1500px] flex-col gap-2 px-3 pb-2 focus:outline-none sm:px-4 sm:pb-3"
     >
       <h1 className="sr-only">Desenhar presença com clareza</h1>
+      <img
+        src={assetSrc("/banner.webp")}
+        alt={profile.name}
+        className="aspect-[1168/300] w-full rounded-[0.7rem] border border-[rgb(141_113_60/42%)] object-cover object-center"
+      />
       <ul className="gate-grid grid flex-1 grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3">
         {tiles.map((tile, index) => (
           <li key={tileKey(tile)} className="min-h-0">
