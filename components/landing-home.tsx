@@ -24,7 +24,7 @@ const tileBackgrounds = [
   "/tiles/tile-6.webp",
   "/tiles/tile-7.webp",
   "/tiles/luminaria-vao.webp",
-  "/tiles/leme.webp",
+  "/tiles/marcenaria.webp",
 ] as const;
 
 function tileBackground(index: number): (typeof tileBackgrounds)[number] {
@@ -68,34 +68,37 @@ function tileKey(tile: HomeTile): string {
   }
 }
 
+const tileScrim =
+  "linear-gradient(to top, rgba(11, 11, 13, 0.94) 0%, rgba(11, 11, 13, 0.78) 26%, rgba(11, 11, 13, 0.34) 54%, rgba(11, 11, 13, 0.08) 100%)";
+
+const coverImageClass =
+  "pointer-events-none absolute inset-0 size-full object-cover transition duration-700 ease-out group-hover:scale-[1.04] group-hover:brightness-110 group-focus-visible:scale-[1.04] group-focus-visible:brightness-110";
+
 function GateTile({
   href,
   kicker,
   title,
   note,
   image,
+  imageClassName = coverImageClass,
+  background,
 }: {
   href: string;
   kicker: string;
   title: string;
   note: string;
   image: string;
+  imageClassName?: string;
+  background?: string;
 }) {
   return (
-    <Link href={href} className={`gate-tile group flex h-full min-h-[13.5rem] flex-col justify-end p-5 sm:min-h-52 sm:p-6 ${focus}`}>
-      <img
-        src={assetSrc(image)}
-        alt=""
-        className="pointer-events-none absolute inset-0 size-full object-cover transition duration-700 ease-out group-hover:scale-[1.04] group-hover:brightness-110 group-focus-visible:scale-[1.04] group-focus-visible:brightness-110"
-      />
-      <span
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to top, rgba(11, 11, 13, 0.94) 0%, rgba(11, 11, 13, 0.78) 26%, rgba(11, 11, 13, 0.34) 54%, rgba(11, 11, 13, 0.08) 100%)",
-        }}
-        aria-hidden="true"
-      />
+    <Link
+      href={href}
+      className={`gate-tile group flex h-full min-h-[13.5rem] flex-col justify-end p-5 sm:min-h-52 sm:p-6 ${focus}`}
+      style={background ? { background } : undefined}
+    >
+      <img src={assetSrc(image)} alt="" className={imageClassName} />
+      <span className="pointer-events-none absolute inset-0" style={{ background: tileScrim }} aria-hidden="true" />
       <span className="relative" style={{ textShadow: "0 1px 12px rgba(11, 11, 13, 0.8)" }}>
         <span className="block text-[11px] tracking-[0.18em] text-[var(--palette-gold)] uppercase">{kicker}</span>
         <span className="mt-2 block text-[clamp(1.35rem,2vw,1.85rem)] leading-tight font-medium tracking-[-0.03em] text-[var(--palette-cream)]">
@@ -131,6 +134,12 @@ function TileFace({ tile, image }: { tile: HomeTile; image: string }) {
           title={tile.piece.title}
           note={tile.piece.summary}
           image={image}
+          imageClassName={
+            tile.piece.slug === "marcenaria"
+              ? "pointer-events-none absolute inset-x-[10%] top-[6%] h-[54%] object-contain object-top transition duration-700 ease-out group-hover:scale-[1.04] group-hover:brightness-110 group-focus-visible:scale-[1.04] group-focus-visible:brightness-110"
+              : coverImageClass
+          }
+          background={tile.piece.slug === "marcenaria" ? "#12100e" : undefined}
         />
       );
     default: {
