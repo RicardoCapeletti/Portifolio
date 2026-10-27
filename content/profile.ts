@@ -4,11 +4,11 @@ export const profile = {
   location: "São Paulo",
   statement:
     "Projetos em que a imagem e o processo ficam na mesma página: da pesquisa à interface, com as decisões no meio do caminho.",
-  email: "contato@exemplo.com",
+  email: "ricardolopescap@gmail.com",
   links: [
     { label: "GitHub", href: "https://github.com" },
   ],
-  aboutHeading: "Olá meu nome é Ricardo.",
+  aboutHeading: "Olá, meu nome é Ricardo.",
   aboutLede: "Designer gráfico | Criatividade, estratégia e soluções visuais.",
   about: [
     "Atuo na área de design desde os 18 anos, construindo uma trajetória marcada pela versatilidade e pela busca de soluções visuais criativas e eficientes.",
