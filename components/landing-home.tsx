@@ -23,8 +23,8 @@ const tileBackgrounds = [
   "/tiles/tile-5.webp",
   "/tiles/tile-6.webp",
   "/tiles/tile-7.webp",
-  "/tiles/tile-8.webp",
-  "/tiles/tile-9.webp",
+  "/tiles/luminaria-vao.webp",
+  "/tiles/leme.webp",
 ] as const;
 
 function tileBackground(index: number): (typeof tileBackgrounds)[number] {

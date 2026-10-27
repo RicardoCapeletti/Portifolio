@@ -2,27 +2,27 @@ import type { Project, WorkImage } from "@/content/types";
 
 const bruma = {
   capa: {
-    src: "/work/bruma/capa.svg",
+    src: "/work/bruma/bruma-capa.svg",
     alt: "Frasco escuro sobre papel claro, com o nome Bruma e uma linha dourada.",
     caption: "O nome cabe numa linha na altura do vidro.",
   },
   pesquisa: {
-    src: "/work/bruma/pesquisa.svg",
+    src: "/work/bruma/bruma-pesquisa.svg",
     alt: "Três tamanhos do mesmo frasco, do vidro de 30 ml até a página.",
     caption: "O desenho é testado no frasco antes da caixa.",
   },
   conceito: {
-    src: "/work/bruma/conceito.svg",
+    src: "/work/bruma/bruma-conceito.svg",
     alt: "A palavra Bruma em grande, um fio dourado e o frasco ao lado.",
     caption: "Uma palavra, um fio e o resto é ar.",
   },
   estrutura: {
-    src: "/work/bruma/estrutura.svg",
+    src: "/work/bruma/bruma-estrutura.svg",
     alt: "Duas páginas: a nota de saída à esquerda e o frasco à direita.",
     caption: "Cada fragrância ocupa uma página, começando pela nota de saída.",
   },
   interface: {
-    src: "/work/bruma/interface.svg",
+    src: "/work/bruma/bruma-interface.svg",
     alt: "Página da fragrância Figo verde, com reserva e muito espaço em branco.",
     caption: "A história só entra depois da nota.",
   },
@@ -30,27 +30,27 @@ const bruma = {
 
 const malha = {
   capa: {
-    src: "/work/malha/capa.svg",
+    src: "/work/malha/malha-capa.svg",
     alt: "Grade de pontos com um caminho azul da origem ao destino.",
     caption: "A rota é a peça. O mapa fica atrás.",
   },
   pesquisa: {
-    src: "/work/malha/pesquisa.svg",
+    src: "/work/malha/malha-pesquisa.svg",
     alt: "Rua desenhada pela calçada, ao lado de um tempo de doze minutos a pé.",
     caption: "O tempo medido é o de quem anda.",
   },
   conceito: {
-    src: "/work/malha/conceito.svg",
+    src: "/work/malha/malha-conceito.svg",
     alt: "Três cartões: travessia, calçada e passo.",
     caption: "Só entra na tela o que ajuda a atravessar a próxima esquina.",
   },
   estrutura: {
-    src: "/work/malha/estrutura.svg",
+    src: "/work/malha/malha-estrutura.svg",
     alt: "Linha azul em ângulos retos até um ponto, com nove minutos ao lado.",
     caption: "A linha quebra na esquina, não no meio da rua.",
   },
   interface: {
-    src: "/work/malha/interface.svg",
+    src: "/work/malha/malha-interface.svg",
     alt: "Tela escura com o destino Praça da Luz e o botão começar a andar.",
     caption: "O destino é o título. O mapa cabe na metade de baixo.",
   },
@@ -58,27 +58,27 @@ const malha = {
 
 const orbe = {
   capa: {
-    src: "/work/orbe/capa.svg",
+    src: "/work/orbe/orbe-capa.svg",
     alt: "Céu noturno com uma lua grande, um anel fino e o nome Orbe.",
     caption: "A noite é o fundo. A lua é o registro.",
   },
   pesquisa: {
-    src: "/work/orbe/pesquisa.svg",
+    src: "/work/orbe/orbe-pesquisa.svg",
     alt: "Três fichas escuras, cada uma com um círculo de tamanho diferente.",
     caption: "As pessoas descrevem o que viram, não o catálogo.",
   },
   conceito: {
-    src: "/work/orbe/conceito.svg",
+    src: "/work/orbe/orbe-conceito.svg",
     alt: "Três círculos alinhados: lugar, visto e hora.",
     caption: "Três campos. O resto fica opcional.",
   },
   estrutura: {
-    src: "/work/orbe/estrutura.svg",
+    src: "/work/orbe/orbe-estrutura.svg",
     alt: "Tela noturna com a frase três pontos acima do telhado e a hora 22:40.",
     caption: "A frase vem antes do mapa.",
   },
   interface: {
-    src: "/work/orbe/interface.svg",
+    src: "/work/orbe/orbe-interface.svg",
     alt: "Celular escuro com uma lua e o botão guardar a noite.",
     caption: "Guardar a noite é a única ação da primeira tela.",
   },
@@ -86,27 +86,27 @@ const orbe = {
 
 const largo = {
   capa: {
-    src: "/work/largo/capa.svg",
+    src: "/work/largo/largo-capa.svg",
     alt: "Fundo preto com uma letra L construída em blocos claros e o nome Largo.",
     caption: "O espécime é a marca. O nome fica numa linha fina.",
   },
   pesquisa: {
-    src: "/work/largo/pesquisa.svg",
+    src: "/work/largo/largo-pesquisa.svg",
     alt: "Quatro cards iguais de loja, com barras no lugar da prova tipográfica.",
     caption: "O site antigo igualava todas as famílias.",
   },
   conceito: {
-    src: "/work/largo/conceito.svg",
+    src: "/work/largo/largo-conceito.svg",
     alt: "Frase de prova em tamanho de título sobre fundo preto: A pressa faz o tipo largo.",
     caption: "A página abre no tamanho em que a letra se justifica.",
   },
   estrutura: {
-    src: "/work/largo/estrutura.svg",
+    src: "/work/largo/largo-estrutura.svg",
     alt: "Prova enorme das letras A e a, com o nome da família embaixo.",
     caption: "Cada família ganha uma prova escrita para ela.",
   },
   interface: {
-    src: "/work/largo/interface.svg",
+    src: "/work/largo/largo-interface.svg",
     alt: "Página branca com um título grande e um botão de licença no canto.",
     caption: "O uso da licença aparece numa linha, antes do preço.",
   },
@@ -114,27 +114,27 @@ const largo = {
 
 const vigilia = {
   capa: {
-    src: "/work/vigilia/capa.svg",
+    src: "/work/vigilia/vigilia-capa.svg",
     alt: "Planta de uma sala com uma cadeira e um arco de luz.",
     caption: "A sala silenciosa, desenhada antes da interface.",
   },
   pesquisa: {
-    src: "/work/vigilia/pesquisa.svg",
+    src: "/work/vigilia/vigilia-pesquisa.svg",
     alt: "Um formulário longo ao lado de um cartão que só diz livre.",
     caption: "O cadastro pedia mais do que a sala tinha para oferecer.",
   },
   conceito: {
-    src: "/work/vigilia/conceito.svg",
+    src: "/work/vigilia/vigilia-conceito.svg",
     alt: "Seis colunas da noite, duas marcadas como livres.",
     caption: "A grade mostra o vazio antes de pedir o nome.",
   },
   estrutura: {
-    src: "/work/vigilia/estrutura.svg",
+    src: "/work/vigilia/vigilia-estrutura.svg",
     alt: "Grade de horários da sala silenciosa, com alguns blocos ocupados.",
     caption: "Livre é o estado normal. Ocupada é a exceção.",
   },
   interface: {
-    src: "/work/vigilia/interface.svg",
+    src: "/work/vigilia/vigilia-interface.svg",
     alt: "Tela noturna com a sala 2 e um horário marcado em amarelo.",
     caption: "Depois das 22h o chrome escurece e a grade permanece legível.",
   },
@@ -142,27 +142,27 @@ const vigilia = {
 
 const costa = {
   capa: {
-    src: "/work/costa/capa.svg",
+    src: "/work/costa/costa-capa.svg",
     alt: "Horizonte com sol sobre o mar e a frase entrar às 16:10.",
     caption: "A primeira resposta é uma hora, não um gráfico.",
   },
   pesquisa: {
-    src: "/work/costa/pesquisa.svg",
+    src: "/work/costa/costa-pesquisa.svg",
     alt: "Três painéis separados: maré, vento e onda.",
     caption: "A decisão estava espalhada em três lugares.",
   },
   conceito: {
-    src: "/work/costa/conceito.svg",
+    src: "/work/costa/costa-conceito.svg",
     alt: "Painel azul com a palavra Entrar e o horário 16:10.",
     caption: "Uma frase que dá para ler com areia na mão.",
   },
   estrutura: {
-    src: "/work/costa/estrutura.svg",
+    src: "/work/costa/costa-estrutura.svg",
     alt: "Tela de hoje com a palavra Entrar, uma barra de tempo e uma nota sobre amanhã.",
     caption: "Hoje fica enorme. Amanhã cabe numa nota.",
   },
   interface: {
-    src: "/work/costa/interface.svg",
+    src: "/work/costa/costa-interface.svg",
     alt: "Celular claro com Entrar, 16:10 e uma barra de maré.",
     caption: "A causa da frase fica um toque atrás.",
   },
