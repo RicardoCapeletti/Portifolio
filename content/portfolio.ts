@@ -51,6 +51,18 @@ export const categoryNotes: Record<PortfolioCategory, string> = {
 
 export const portfolioPieces: PortfolioPiece[] = [
   {
+    slug: "leme",
+    title: "Leme",
+    category: "Logos",
+    year: "2025",
+    context: "Padaria Leme, Pinheiros",
+    role: "Identidade visual",
+    summary: "Selo da padaria de bairro, legível no saco de pão e no letreiro da esquina.",
+    description:
+      "A Leme abre cedo na Teodoro Sampaio e precisava de uma marca que coubesse no carimbo da embalagem e na fachada. O desenho parte de um pão visto de cima: um círculo e um risco. São duas cores, sem sombra. O nome entra em caixa baixa, curto o bastante para a sacola.",
+    cover: { from: "#3f2a22", to: "#e7cbb4", motif: "seal" },
+  },
+  {
     slug: "marcenaria",
     title: "Marcenaria",
     category: "Logos",
