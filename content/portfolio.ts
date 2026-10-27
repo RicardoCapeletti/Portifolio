@@ -108,7 +108,7 @@ export const portfolioPieces: PortfolioPiece[] = [
     role: "Identidade visual",
     summary: "Wordmark branco sobre preto, com o O em forma de onda.",
     description:
-      "O logotipo escreve SOM LAB em caixa alta, sobre fundo preto. O O vira um círculo com barras em ciano, no desenho de uma onda. Abaixo, a linha “escola de música”, espaçada. Nos cantos, barras verticais em verde-azulado.",
+      "O logotipo escreve SOM LAB em caixa alta, sobre fundo preto. O O vira um círculo com barras em ciano, no desenho de uma onda. Abaixo, a linha “escola de música”, espaçada.",
     image: "/tiles/som-lab.webp",
     cover: { from: "#0b0b0d", to: "#1a6b73", motif: "seal" },
   },
@@ -192,9 +192,9 @@ export const portfolioPieces: PortfolioPiece[] = [
     year: "2026",
     context: "SOM LAB, escola de música",
     role: "Impresso",
-    summary: "Cartão preto com o wordmark branco e a linha “escola de música”.",
+    summary: "Cartão preto com o wordmark branco e barras verde-azuladas nos cantos.",
     description:
-      "O cartão leva o mesmo wordmark da escola, sem as barras dos cantos. SOM LAB fica no centro, em branco. O O guarda a onda em ciano. Abaixo, a linha “escola de música”, sobre fundo preto.",
+      "O cartão leva o wordmark da escola sobre fundo preto, com barras verticais em verde-azulado nos cantos. SOM LAB fica no centro, em branco. O O guarda a onda em ciano. Abaixo, a linha “escola de música”.",
     image: "/tiles/som-lab-cartao.webp",
     cover: { from: "#0b0b0d", to: "#2ec4c7", motif: "ticket" },
   },
