@@ -33,6 +33,7 @@ export type PortfolioPiece = {
   summary: string;
   description: string;
   featured?: boolean;
+  image?: string;
   cover: {
     from: string;
     to: string;
@@ -50,16 +51,17 @@ export const categoryNotes: Record<PortfolioCategory, string> = {
 
 export const portfolioPieces: PortfolioPiece[] = [
   {
-    slug: "leme",
-    title: "Leme",
+    slug: "marcenaria",
+    title: "Marcenaria",
     category: "Logos",
     year: "2025",
-    context: "Padaria Leme, Pinheiros",
+    context: "Marcenaria",
     role: "Identidade visual",
-    summary: "Selo da padaria de bairro, legível no saco de pão e no letreiro da esquina.",
+    summary: "Monograma em bronze sobre preto, com o nome em caixa alta.",
     description:
-      "A Leme abre cedo na Teodoro Sampaio e precisava de uma marca que coubesse no carimbo da embalagem e na fachada. O desenho parte de um pão visto de cima: um círculo e um risco. São duas cores, sem sombra. O nome entra em caixa baixa, curto o bastante para a sacola.",
-    cover: { from: "#3f2a22", to: "#e7cbb4", motif: "seal" },
+      "O logotipo junta um monograma em bronze e o nome Marcenaria. O desenho lembra uma letra e o telhado de uma casa, sobre fundo preto. Abaixo do nome, a linha “planejando seus sonhos em madeira”.",
+    image: "/tiles/marcenaria.webp",
+    cover: { from: "#0b0b0d", to: "#c4895a", motif: "seal" },
   },
   {
     slug: "barro-alto",

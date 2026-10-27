@@ -1,4 +1,5 @@
 import type { CoverMotif, PortfolioPiece } from "@/content/portfolio";
+import { assetSrc } from "@/lib/assets";
 
 function CoverMotifMark({ motif }: { motif: CoverMotif }) {
   switch (motif) {
@@ -125,6 +126,14 @@ export function CoverArt({
   piece: PortfolioPiece;
   className?: string;
 }) {
+  if (piece.image) {
+    return (
+      <span className={`relative block overflow-hidden bg-[#0b0b0d] ${className ?? ""}`} aria-hidden="true">
+        <img src={assetSrc(piece.image)} alt="" className="absolute inset-0 size-full object-contain object-center" />
+      </span>
+    );
+  }
+
   return (
     <span
       className={`relative block overflow-hidden ${className ?? ""}`}
