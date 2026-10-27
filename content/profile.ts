@@ -4,7 +4,7 @@ export const profile = {
   location: "São Paulo",
   statement:
     "Projetos em que a imagem e o processo ficam na mesma página: da pesquisa à interface, com as decisões no meio do caminho.",
-  email: "contato@exemplo.com",
+  email: "ricardolopescap@gmail.com",
   links: [
     { label: "GitHub", href: "https://github.com" },
   ],
