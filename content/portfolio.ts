@@ -113,6 +113,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#0b0b0d", to: "#1a6b73", motif: "seal" },
   },
   {
+    slug: "pizzaria",
+    title: "Pizzaria",
+    category: "Logos",
+    year: "2026",
+    context: "Pizzaria",
+    role: "Identidade visual",
+    summary: "Fatia de pizza em três cores, com o nome abaixo.",
+    description:
+      "O logotipo é uma fatia vista de cima: a borda em vermelho, a massa em verde e ouro, e um ponto no centro. O nome Pizzaria entra abaixo, em preto. O fundo é creme, com uma pizza clara por trás do desenho.",
+    image: "/tiles/pizzaria.webp",
+    cover: { from: "#f3efe6", to: "#8d3a32", motif: "seal" },
+  },
+  {
     slug: "feira-da-vila",
     title: "Feira da Vila",
     category: "Banners",
