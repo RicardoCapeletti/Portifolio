@@ -3,37 +3,37 @@ import { extraProjects } from "@/content/projects-extra";
 
 const atelie = {
   capa: {
-    src: "/work/atelie-norte/capa.svg",
+    src: "/work/atelie-norte/atelie-norte-capa.svg",
     alt: "Cartaz do Ateliê Norte com um vaso de cerâmica em terracota sobre papel quente.",
     caption: "O selo parte de um vaso frontal, legível mesmo pequeno.",
   },
   pesquisa: {
-    src: "/work/atelie-norte/pesquisa.svg",
+    src: "/work/atelie-norte/atelie-norte-pesquisa.svg",
     alt: "Três fichas de conversa no ateliê, com anotações e amostras de barro.",
     caption: "As fichas seguem a forma da peça, não a coleção.",
   },
   conceito: {
-    src: "/work/atelie-norte/conceito.svg",
+    src: "/work/atelie-norte/atelie-norte-conceito.svg",
     alt: "Três estudos do vaso ao lado de uma paleta curta de barro e terracota.",
     caption: "Três desenhos antes de qualquer aplicação.",
   },
   estrutura: {
-    src: "/work/atelie-norte/estrutura.svg",
+    src: "/work/atelie-norte/atelie-norte-estrutura.svg",
     alt: "Duas páginas de catálogo com uma peça por folha e margem larga.",
     caption: "O impresso define a ordem das páginas do site.",
   },
   interface: {
-    src: "/work/atelie-norte/interface.svg",
+    src: "/work/atelie-norte/atelie-norte-interface.svg",
     alt: "Página do catálogo digital com quatro peças e o selo no canto.",
     caption: "A grelha de quatro colunas repete o catálogo.",
   },
   interfaceMobile: {
-    src: "/work/atelie-norte/interface-mobile.svg",
+    src: "/work/atelie-norte/atelie-norte-interface-mobile.svg",
     alt: "Versão estreita do catálogo, com uma peça por tela e um único pedido de reserva.",
     caption: "No celular, uma peça por vez e um só pedido: reservar.",
   },
   prototipo: {
-    src: "/work/atelie-norte/prototipo.svg",
+    src: "/work/atelie-norte/atelie-norte-prototipo.svg",
     alt: "Carimbo circular, etiqueta e a primeira dobra do catálogo lado a lado.",
     caption: "O mesmo desenho serve o carimbo, a etiqueta e a capa.",
   },
@@ -41,22 +41,22 @@ const atelie = {
 
 const linha = {
   capa: {
-    src: "/work/linha-clara/capa.svg",
+    src: "/work/linha-clara/linha-clara-capa.svg",
     alt: "Composição com uma coluna estreita de leitura e muita margem em papel claro.",
     caption: "A coluna estreita é o produto, não um detalhe.",
   },
   pesquisa: {
-    src: "/work/linha-clara/pesquisa.svg",
+    src: "/work/linha-clara/linha-clara-pesquisa.svg",
     alt: "Duas páginas de ensaio com uma passagem marcada e anotações na margem.",
     caption: "A leitura atual foi medida: linha longa demais, nota no meio do parágrafo.",
   },
   conceito: {
-    src: "/work/linha-clara/conceito.svg",
+    src: "/work/linha-clara/linha-clara-conceito.svg",
     alt: "Três escalas de texto empilhadas, da mais miúda à do título.",
     caption: "Três tamanhos. O corpo não cresce com a tela.",
   },
   interface: {
-    src: "/work/linha-clara/interface.svg",
+    src: "/work/linha-clara/linha-clara-interface.svg",
     alt: "Tela de leitura com a coluna ao centro e o progresso na margem direita.",
     caption: "Notas e progresso moram na margem.",
   },
@@ -64,37 +64,37 @@ const linha = {
 
 const campo = {
   capa: {
-    src: "/work/campo/capa.svg",
+    src: "/work/campo/campo-capa.svg",
     alt: "Composição de frutos e verduras em círculos verdes, palha e terracota.",
     caption: "A feira lembrada como banca, não como grade de supermercado.",
   },
   pesquisa: {
-    src: "/work/campo/pesquisa.svg",
+    src: "/work/campo/campo-pesquisa.svg",
     alt: "Mapa simples de barracas da feira, com uma banca destacada.",
     caption: "O pedido começa pela banca que a pessoa já conhece.",
   },
   conceito: {
-    src: "/work/campo/conceito.svg",
+    src: "/work/campo/campo-conceito.svg",
     alt: "Quatro blocos em sequência: banca, itens, cesta e confirmação.",
     caption: "Quatro passos, do tamanho de uma mão.",
   },
   estrutura: {
-    src: "/work/campo/estrutura.svg",
+    src: "/work/campo/campo-estrutura.svg",
     alt: "Lista de itens de uma banca com controles de mais e menos.",
     caption: "Quantidade com mais e menos. O teclado fica para o peso.",
   },
   passos: {
-    src: "/work/campo/passos.svg",
+    src: "/work/campo/campo-passos.svg",
     alt: "Quatro telas pequenas mostrando banca, itens, cesta e uma frase de confirmação.",
     caption: "A confirmação é uma frase, não um código.",
   },
   interface: {
-    src: "/work/campo/interface.svg",
+    src: "/work/campo/campo-interface.svg",
     alt: "Tela de celular com a cesta da semana e o total no pé da página.",
     caption: "A cesta permanece visível enquanto a pessoa muda de banca.",
   },
   prototipo: {
-    src: "/work/campo/prototipo.svg",
+    src: "/work/campo/campo-prototipo.svg",
     alt: "Três celulares em sequência sobre a mesa da feira, do primeiro item à frase final.",
     caption: "O protótipo foi lido em pé, entre uma banca e outra.",
   },

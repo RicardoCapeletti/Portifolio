@@ -15,7 +15,7 @@ O site abre em [http://127.0.0.1:4317](http://127.0.0.1:4317).
 
 ## Acrescentar um projeto
 
-1. Coloque as imagens em `public/work/<slug>/`. Caminhos no conteúdo começam com `/work/<slug>/arquivo.svg`.
+1. Coloque as imagens em `public/work/<slug>/`, com o slug no nome do arquivo (`<slug>-capa.svg`). Caminhos no conteúdo começam com `/work/<slug>/<slug>-arquivo.svg`.
 2. Adicione um objeto em [`content/projects.ts`](content/projects.ts), com `slug`, disciplina (`produto`, `interface` ou `marca`), contexto e etapas.
 3. Uma etapa pode ficar sem imagens: a página mostra o texto da decisão e não desenha uma moldura vazia.
 4. Rode `npm run build`. A home, o índice e a rota do estudo passam a incluir o projeto.
