@@ -160,6 +160,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#1d4a32", to: "#d7efc8", motif: "app" },
   },
   {
+    slug: "marcenaria-cartao",
+    title: "Marcenaria (cartão)",
+    category: "Cartões",
+    year: "2025",
+    context: "Marcenaria",
+    role: "Impresso",
+    summary: "Cartão com o monograma em madeira, o nome em caixa alta e a linha de baixo.",
+    description:
+      "O cartão leva o mesmo monograma da marca, agora com veios de madeira, sobre fundo preto. O nome Marcenaria entra em caixa alta. Abaixo, a linha “planejando seus sonhos em madeira”, entre dois traços.",
+    image: "/tiles/marcenaria-cartao.webp",
+    cover: { from: "#1a120c", to: "#c4895a", motif: "ticket" },
+  },
+  {
     slug: "nara-flores",
     title: "Nara Flores",
     category: "Cartões",
