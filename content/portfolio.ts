@@ -100,6 +100,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#1c2430", to: "#d5dbe6", motif: "arch" },
   },
   {
+    slug: "som-lab",
+    title: "SOM LAB",
+    category: "Logos",
+    year: "2026",
+    context: "SOM LAB, escola de música",
+    role: "Identidade visual",
+    summary: "Wordmark branco sobre preto, com o O em forma de onda.",
+    description:
+      "O logotipo escreve SOM LAB em caixa alta, sobre fundo preto. O O vira um círculo com barras em ciano, no desenho de uma onda. Abaixo, a linha “escola de música”, espaçada. Nos cantos, barras verticais em verde-azulado.",
+    image: "/tiles/som-lab.webp",
+    cover: { from: "#0b0b0d", to: "#1a6b73", motif: "seal" },
+  },
+  {
     slug: "feira-da-vila",
     title: "Feira da Vila",
     category: "Banners",
@@ -171,6 +184,19 @@ export const portfolioPieces: PortfolioPiece[] = [
       "O cartão leva o mesmo monograma da marca, agora com veios de madeira, sobre fundo preto. O nome Marcenaria entra em caixa alta. Abaixo, a linha “planejando seus sonhos em madeira”, entre dois traços.",
     image: "/tiles/marcenaria-cartao.webp",
     cover: { from: "#1a120c", to: "#c4895a", motif: "ticket" },
+  },
+  {
+    slug: "som-lab-cartao",
+    title: "SOM LAB (cartão)",
+    category: "Cartões",
+    year: "2026",
+    context: "SOM LAB, escola de música",
+    role: "Impresso",
+    summary: "Cartão preto com o wordmark branco e a linha “escola de música”.",
+    description:
+      "O cartão leva o mesmo wordmark da escola, sem as barras dos cantos. SOM LAB fica no centro, em branco. O O guarda a onda em ciano. Abaixo, a linha “escola de música”, sobre fundo preto.",
+    image: "/tiles/som-lab-cartao.webp",
+    cover: { from: "#0b0b0d", to: "#2ec4c7", motif: "ticket" },
   },
   {
     slug: "nara-flores",
