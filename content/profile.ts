@@ -8,7 +8,7 @@ export const profile = {
   links: [
     { label: "GitHub", href: "https://github.com" },
   ],
-  aboutHeading: "Olá meu nome é Ricardo.",
+  aboutHeading: "Olá, meu nome é Ricardo.",
   aboutLede: "Designer gráfico | Criatividade, estratégia e soluções visuais.",
   about: [
     "Atuo na área de design desde os 18 anos, construindo uma trajetória marcada pela versatilidade e pela busca de soluções visuais criativas e eficientes.",
