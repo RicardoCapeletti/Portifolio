@@ -1,30 +1,21 @@
 import Link from "next/link";
 
 import { profile } from "@/content/profile";
-import {
-  categoryHref,
-  categoryNotes,
-  getFeaturedPiece,
-  portfolioCategories,
-  portfolioPieces,
-  type PortfolioCategory,
-  type PortfolioPiece,
-} from "@/content/portfolio";
+import { categoryHref, categoryNotes, type PortfolioCategory } from "@/content/portfolio";
 import { assetSrc } from "@/lib/assets";
 
 const focus =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--palette-gold)]";
+
+const mosaicServices = ["Logos", "Banners", "Web design", "Cartões"] as const satisfies readonly PortfolioCategory[];
 
 const tileBackgrounds = [
   "/tiles/tile-1.webp",
   "/tiles/tile-2.webp",
   "/tiles/tile-3.webp",
   "/tiles/tile-4.webp",
-  "/tiles/tile-5.webp",
   "/tiles/tile-6.webp",
   "/tiles/tile-7.webp",
-  "/tiles/luminaria-vao.webp",
-  "/tiles/leme.webp",
 ] as const;
 
 function tileBackground(index: number): (typeof tileBackgrounds)[number] {
@@ -33,22 +24,10 @@ function tileBackground(index: number): (typeof tileBackgrounds)[number] {
   return tileBackgrounds[0];
 }
 
-type HomeTile =
-  | { kind: "service"; name: PortfolioCategory }
-  | { kind: "sobre" }
-  | { kind: "contato" }
-  | { kind: "piece"; piece: PortfolioPiece };
+type HomeTile = { kind: "service"; name: PortfolioCategory } | { kind: "sobre" } | { kind: "contato" };
 
 function homeTiles(): HomeTile[] {
-  const featured = getFeaturedPiece();
-  const companion = portfolioPieces.find((piece) => piece.slug !== featured.slug) ?? featured;
-  return [
-    ...portfolioCategories.map((name) => ({ kind: "service" as const, name })),
-    { kind: "sobre" },
-    { kind: "contato" },
-    { kind: "piece", piece: featured },
-    { kind: "piece", piece: companion },
-  ];
+  return [...mosaicServices.map((name) => ({ kind: "service" as const, name })), { kind: "sobre" }, { kind: "contato" }];
 }
 
 function tileKey(tile: HomeTile): string {
@@ -59,8 +38,6 @@ function tileKey(tile: HomeTile): string {
       return "sobre";
     case "contato":
       return "contato";
-    case "piece":
-      return tile.piece.slug;
     default: {
       const neverTile: never = tile;
       return neverTile;
@@ -121,16 +98,6 @@ function TileFace({ tile, image }: { tile: HomeTile; image: string }) {
       return <GateTile href="/sobre" kicker="Estúdio" title="Sobre" note={profile.about[0]} image={image} />;
     case "contato":
       return <GateTile href="/contato" kicker="Escreva" title="Contato" note={profile.email} image={image} />;
-    case "piece":
-      return (
-        <GateTile
-          href={`/pecas/${tile.piece.slug}`}
-          kicker={tile.piece.category}
-          title={tile.piece.title}
-          note={tile.piece.summary}
-          image={image}
-        />
-      );
     default: {
       const neverTile: never = tile;
       return neverTile;
@@ -148,7 +115,7 @@ export function LandingHome() {
       className="mx-auto flex min-h-[calc(100svh-var(--site-header))] w-full max-w-[1500px] flex-col px-3 pb-2 focus:outline-none sm:px-4 sm:pb-3"
     >
       <h1 className="sr-only">Desenhar presença com clareza</h1>
-      <ul className="gate-grid grid flex-1 grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3">
+      <ul className="gate-grid grid flex-1 grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
         {tiles.map((tile, index) => (
           <li key={tileKey(tile)} className="min-h-0">
             <TileFace tile={tile} image={tileBackground(index)} />
