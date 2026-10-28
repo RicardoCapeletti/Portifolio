@@ -116,6 +116,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#f3c5d8", to: "#6b2a4a", motif: "seal" },
   },
   {
+    slug: "omega-escola",
+    title: "Omega Escola de Design",
+    category: "Logos",
+    year: "2026",
+    context: "Omega Escola de Design",
+    role: "Identidade visual",
+    summary: "Lâmpada geométrica em quatro cores, com o nome Omega ao lado.",
+    description:
+      "O logotipo junta uma lâmpada feita de formas: preto, laranja, azul e um traço verde. O nome Omega entra ao lado, em preto. Abaixo, a linha “escola de design”, sobre fundo claro.",
+    image: "/tiles/omega-escola.webp",
+    cover: { from: "#eceae4", to: "#1a1a1a", motif: "seal" },
+  },
+  {
     slug: "feira-da-vila",
     title: "Feira da Vila",
     category: "Banners",
