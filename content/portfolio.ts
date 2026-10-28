@@ -90,6 +90,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#f3efe6", to: "#8d3a32", motif: "seal" },
   },
   {
+    slug: "omi-afefe",
+    title: "OMI AFEFE",
+    category: "Logos",
+    year: "2026",
+    context: "OMI AFEFE",
+    role: "Identidade visual",
+    summary: "Nome em duas linhas, envolvido por ondas e vento em preto.",
+    description:
+      "O logotipo escreve OMI AFEFE em duas linhas, em preto sobre branco. Uma onda com espuma entra pela esquerda e o vento se enrola à direita, em voltas grossas. O nome fica no vão do desenho.",
+    image: "/tiles/omi-afefe.webp",
+    cover: { from: "#f5f3ee", to: "#161619", motif: "seal" },
+  },
+  {
     slug: "feira-da-vila",
     title: "Feira da Vila",
     category: "Banners",
