@@ -103,6 +103,19 @@ export const portfolioPieces: PortfolioPiece[] = [
     cover: { from: "#f5f3ee", to: "#161619", motif: "seal" },
   },
   {
+    slug: "aso-atelie",
+    title: "Àsò ATELIÊ",
+    category: "Logos",
+    year: "2026",
+    context: "Àsò Ateliê",
+    role: "Identidade visual",
+    summary: "Silhueta com lenço, carretel e borboletas, sobre rosa.",
+    description:
+      "O logotipo junta uma silhueta de perfil, um lenço estampado e um carretel, com um touro e duas borboletas. O nome Àsò entra grande, em preto. Abaixo, a linha “ATELIÊ”, em dourado, sobre fundo rosa.",
+    image: "/tiles/aso-atelie.webp",
+    cover: { from: "#f3c5d8", to: "#6b2a4a", motif: "seal" },
+  },
+  {
     slug: "feira-da-vila",
     title: "Feira da Vila",
     category: "Banners",
