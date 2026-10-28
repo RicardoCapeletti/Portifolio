@@ -51,18 +51,6 @@ export const categoryNotes: Record<PortfolioCategory, string> = {
 
 export const portfolioPieces: PortfolioPiece[] = [
   {
-    slug: "leme",
-    title: "Leme",
-    category: "Logos",
-    year: "2025",
-    context: "Padaria Leme, Pinheiros",
-    role: "Identidade visual",
-    summary: "Selo da padaria de bairro, legível no saco de pão e no letreiro da esquina.",
-    description:
-      "A Leme abre cedo na Teodoro Sampaio e precisava de uma marca que coubesse no carimbo da embalagem e na fachada. O desenho parte de um pão visto de cima: um círculo e um risco. São duas cores, sem sombra. O nome entra em caixa baixa, curto o bastante para a sacola.",
-    cover: { from: "#3f2a22", to: "#e7cbb4", motif: "seal" },
-  },
-  {
     slug: "marcenaria",
     title: "Marcenaria",
     category: "Logos",
@@ -74,30 +62,6 @@ export const portfolioPieces: PortfolioPiece[] = [
       "O logotipo junta um monograma em bronze e o nome Marcenaria. O desenho lembra uma letra e o telhado de uma casa, sobre fundo preto. Abaixo do nome, a linha “planejando seus sonhos em madeira”.",
     image: "/tiles/marcenaria.webp",
     cover: { from: "#0b0b0d", to: "#c4895a", motif: "seal" },
-  },
-  {
-    slug: "barro-alto",
-    title: "Barro Alto",
-    category: "Logos",
-    year: "2024",
-    context: "Ateliê Barro Alto, Vila Madalena",
-    role: "Identidade visual",
-    summary: "Wordmark de um ateliê de cerâmica, feito para a placa e para a etiqueta da peça.",
-    description:
-      "O Barro Alto vende peças únicas e não queria um símbolo competindo com o objeto. A marca é o nome, com um encontro entre as letras que lembra a boca de um vaso. Funciona em preto sobre o barro cru e em branco na vitrine. A etiqueta leva só isso.",
-    cover: { from: "#4a342c", to: "#d7b7a3", motif: "bars" },
-  },
-  {
-    slug: "mirante",
-    title: "Mirante",
-    category: "Logos",
-    year: "2026",
-    context: "Livraria Mirante, Santa Cecília",
-    role: "Identidade visual",
-    summary: "Monograma de uma livraria de mesa única, pensado para o marcador e a sacola.",
-    description:
-      "A Mirante cabe numa sala e numa mesa de lançamento. O monograma junta a inicial e uma linha de horizonte, no tamanho de um carimbo. Não há ícone extra. Quem entra lê o nome primeiro, no marcador de página e na sacola de papel.",
-    cover: { from: "#1c2430", to: "#d5dbe6", motif: "arch" },
   },
   {
     slug: "som-lab",
